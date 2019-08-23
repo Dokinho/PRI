@@ -1,1 +1,11 @@
+-Register.php:
+    -Neki captcha ili security (ako korisnik 3 puta krivo unese lozinku nešto napraviti)
 -Enable CSRF u config.php
+-Forgot password gumb
+-Fix welcome text, da ne ide u pizzu
+-Postoji li security flaw u Korisnik.php (Može li se lozinka u tekstualnom obliku dohvatiti iz POST-a)?
+-Neki efekti (fade in etc.)
+-Popravi jokes
+-Provjeri hardcoded URL-ove i prepravi ih sa base_url ili site_url
+-Dotjeraj form validation
+-Ručno zatvori konekcije na bazu?

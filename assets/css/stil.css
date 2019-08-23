@@ -1,3 +1,72 @@
+/*  |Boje:
+    |Narančasto-žuta: #ffc926
+    |
+*/  
+
+html {
+    height: 100%;
+}
+
+body {
+    height: 100%;
+    background-color: black;
+}
+
+a {
+    color:white;
+}
+
 .jumbotron {
-    margin-bottom:0;
+    background: none;
+    color: #ffc926;
+}
+
+.navbar {
+    background-color: #ffc926;
+}
+
+.nav-item {
+    padding: 2px;
+    margin: 2px;
+}
+
+#bghome {
+    background-image: url("../images/pizzabgfinal.jpg");
+    height: 100%;
+    background-blend-mode: color;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#welcometext {
+    font-size: 32px;
+}
+
+#reg {
+    padding-top: 32px;
+}
+
+.textwhite {
+    color: white;
+}
+
+.textyellow {
+    color: #ffc926;
+}
+
+.form-error {
+    color: red;
+}
+
+.btn-yellow {
+    background-color: #ffc926;
+}
+
+.fixed-width {
+    flex: 0 0 360px;
+}
+
+#navbarDropdown::after {
+    display: none;
 }
