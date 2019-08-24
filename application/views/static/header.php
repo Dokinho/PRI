@@ -1,3 +1,8 @@
+<?php
+  //Tip korisnika 0 = "gost"
+  if (!isset($_SESSION['email']))
+    $_SESSION['tip_korisnika'] = 0;
+?>
 <!doctype html>
 <html lang="en">
   <head>
@@ -9,11 +14,15 @@
     <title>NetPizza</title>
 </head>
   <body>
+  <p class="textyellow"><?php echo 'Tip korisnika: ', $_SESSION['tip_korisnika'];?><a href="<?php echo site_url('testlogout');?>"> Odjava</a></p>
     <header>
       <nav class="navbar navbar-expand navbar-light justify-content-between">
         <ul class="navbar-nav flex-row">
           <li class="nav-item">
             <a href="<?php echo site_url('home');?>"><img src="<?php echo base_url('assets/icons/home32.png');?>"></a>
+          </li>
+          <li class="nav-item">
+            <a href="<?php echo site_url('jelovnik');?>"><img src="<?php echo base_url('assets/icons/menu32.png');?>"></a>
           </li>
         </ul>
         <span class="navbar-brand mx-auto font-weight-bold"><h1>NetPizza</h1></span>

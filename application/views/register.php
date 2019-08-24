@@ -1,8 +1,8 @@
 <div class="container-fluid textyellow" id="bghome">
     <div class="row justify-content-center text-center" id="reg">
-        <div class="col fixed-width">
-            <h1>Registracija</h1>
-            <form action="<?php echo site_url('register/done');?>" method="post">
+        <div class="col forma">
+            <h1>Registracija</h1><br>
+            <form action="<?php echo site_url('register');?>" method="post">
                 <div class="form-group">
                     <label class="form-text" for="ime">Ime</label>
                     <input type="text" class="form-control" name="ime" id="ime" placeholder="Unesite vaše ime" value="<?php echo set_value('ime');?>">
@@ -32,7 +32,7 @@
                     <label class="form-text" for="passconf">Potvrdite lozinku</label>
                     <input type="password" class="form-control" name="passconf" id="passconf" placeholder="Potvrdite vašu lozinku" value="<?php echo set_value('passconf');?>">
                     <?php echo form_error('passconf');?>
-                </div>
+                </div><br>
                 <div class="form-group">
                     <button class="btn btn-yellow font-weight-bold" type="submit">OKE, SABMIT</button>
                 </div>

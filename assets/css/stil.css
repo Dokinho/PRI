@@ -1,6 +1,7 @@
 /*  |Boje:
     |Narančasto-žuta: #ffc926
-    |
+    |Bijela
+    |Crna
 */  
 
 html {
@@ -14,11 +15,6 @@ body {
 
 a {
     color:white;
-}
-
-.jumbotron {
-    background: none;
-    color: #ffc926;
 }
 
 .navbar {
@@ -40,7 +36,7 @@ a {
 }
 
 #welcometext {
-    font-size: 32px;
+    font-size: 165%;
 }
 
 #reg {
@@ -63,10 +59,22 @@ a {
     background-color: #ffc926;
 }
 
-.fixed-width {
+.forma {
     flex: 0 0 360px;
+    background-color: rgba(255, 255, 255, 0.3)
 }
 
 #navbarDropdown::after {
     display: none;
+}
+
+.card {
+    min-width: 280px;
+    width: 30%;
+    background: none;
+    border: 2px solid #ffc926;
+}
+
+.card-body, .card-footer, .card-img-top {
+    border: 2px solid #ffc926;
 }

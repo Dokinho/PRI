@@ -5,18 +5,21 @@ class Register extends CI_Controller
 {
     public function index()
     {
-        $this->load->library('form_validation');
-        $this->form_validation->set_error_delimiters('<p class="form-error">', '</p>');
-
         $this->load->view('static/header');
-        $this->load->view('register');
-        $this->load->view('static/footer');
-    }
 
-    //Ova funkcija se poziva klikom na gumb za registraciju
-    public function done()
-    {
-        //Učitavanje biblioteke za provjeru valjanosti forme, te modela "Korisnik" koji komunicira sa bazom
+        //Preusmjeri prijavljene korisnike na početnu stranicu
+        switch ($_SESSION['tip_korisnika']) {
+            case 0: //Gost
+            break;
+            case 1: //Administrator
+            case 2: //Korisnik
+                redirect('home');
+            break;
+            default:
+        }
+
+        //Učitavanje biblioteke za provjeru valjanosti forme
+        $this->load->library('form_validation');
         $this->load->library('form_validation');
         $this->form_validation->set_error_delimiters('<p class="form-error">', '</p>');
         $this->load->model('korisnik', '', true);
@@ -61,11 +64,10 @@ class Register extends CI_Controller
         );
 
         if ($this->form_validation->run() == false) {
-            $this->load->view('static/header');
+            
             $this->load->view('register');
             $this->load->view('static/footer');
         } else {
-            $this->load->view('static/header');
             $this->load->view('register_success');
             $this->load->view('static/footer');
             $this->korisnik->dodaj();

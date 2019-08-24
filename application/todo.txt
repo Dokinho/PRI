@@ -1,11 +1,22 @@
--Register.php:
-    -Neki captcha ili security (ako korisnik 3 puta krivo unese lozinku nešto napraviti)
--Enable CSRF u config.php
+-Uredi "proizvod" tablicu:
+    -Omogući upload slika na bazu
 -Forgot password gumb
--Fix welcome text, da ne ide u pizzu
--Postoji li security flaw u Korisnik.php (Može li se lozinka u tekstualnom obliku dohvatiti iz POST-a)?
 -Neki efekti (fade in etc.)
 -Popravi jokes
 -Provjeri hardcoded URL-ove i prepravi ih sa base_url ili site_url
--Dotjeraj form validation
+-Security (Vidi security class na CI Documentation):
+    -Dotjeraj form validation
+    -Dodatno počisti user input (escaping, xss?)
+    -Neki captcha ili security (ako korisnik 3 puta krivo unese lozinku nešto napraviti)
 -Ručno zatvori konekcije na bazu?
+-Izmjena stranice ovisno o vrsti korisnika
+-Postavi alt za slike
+-Setup CSRF
+-Tooltips
+-Bootstrap spinners?
+-Aria
+-Shortcuts za height i width (npr h-75 i w-75)
+-Fix footer
+-Fix izgled za male uređaje
+
+-Admin stranica (admin tools)
