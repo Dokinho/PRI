@@ -3,9 +3,16 @@ defined('BASEPATH') or exit('No direct script access allowed');
 
 class Register extends CI_Controller
 {
+    public function __construct()
+    {
+        parent::__construct();
+        $this->load->model('korisnik');
+    }
+    
     public function index()
     {
-        $this->load->view('static/header');
+        $data['title'] = 'NetPizza - Registracija';
+        $this->load->view('static/header', $data);
 
         //Preusmjeri prijavljene korisnike na početnu stranicu
         switch ($_SESSION['tip_korisnika']) {
@@ -20,9 +27,7 @@ class Register extends CI_Controller
 
         //Učitavanje biblioteke za provjeru valjanosti forme
         $this->load->library('form_validation');
-        $this->load->library('form_validation');
         $this->form_validation->set_error_delimiters('<p class="form-error">', '</p>');
-        $this->load->model('korisnik', '', true);
 
         //Postavljanje pravila za provjeru valjanosti forme i error poruka
         $this->form_validation->set_rules(
@@ -64,7 +69,6 @@ class Register extends CI_Controller
         );
 
         if ($this->form_validation->run() == false) {
-            
             $this->load->view('register');
             $this->load->view('static/footer');
         } else {

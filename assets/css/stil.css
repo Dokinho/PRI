@@ -19,6 +19,7 @@ a {
 
 .navbar {
     background-color: #ffc926;
+    padding: 0.5rem 0.5rem;
 }
 
 .nav-item {
@@ -35,7 +36,15 @@ a {
     background-size: cover;
 }
 
-#welcometext {
+.footer {
+    background-color: #ffc926;
+}
+
+#text-footer {
+    margin-bottom: 0px;
+}
+
+#welcome-text {
     font-size: 165%;
 }
 
@@ -43,12 +52,12 @@ a {
     padding-top: 32px;
 }
 
-.textwhite {
-    color: white;
+.text-yellow {
+    color: #ffc926;
 }
 
-.textyellow {
-    color: #ffc926;
+.text-black {
+    color: black;
 }
 
 .form-error {
@@ -75,6 +84,86 @@ a {
     border: 2px solid #ffc926;
 }
 
-.card-body, .card-footer, .card-img-top {
+.card-body {
+    border-width: 2px 2px 0px 2px;
+    border-style: solid;
+    border-color: #ffc926;
+}
+
+.card-footer {
+    border-width: 1px 2px 2px 2px;
+    border-style: solid;
+    border-color: #ffc926;
+}
+
+.card-img-top {
     border: 2px solid #ffc926;
+}
+
+.table {
+    margin-bottom: 0px;
+}
+
+.table td {
+    padding: 0px;
+}
+
+.add {
+    margin: 5px;
+}
+
+.kos-grupa {
+    margin: 2px 8px;
+}
+
+.kos-slika {
+    border: 3px solid #ffc926;
+}
+
+.kos-slika-big {
+    border: 3px solid #ffc926;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+#nav-home {
+    color: rgba(0, 0, 0, 0.9);
+    font-size: 2rem;
+}
+
+#nav-home:hover {
+    text-decoration: none;
+}
+
+.dropdown-header {
+    font-size: 1.2rem;
+}
+
+.dropdown-item {
+    padding: 0.25rem 1rem;
+}
+
+#naruci {
+    margin-left: 0.3rem;
+    background-color: black;
+    color: #ffc926;
+}
+
+#naruci-big {
+    background-color: #ffc926;
+    color: black;
+    font-size: 2rem;
+    margin-bottom: 3rem;
+}
+
+.btn-min {
+    margin-right: .5rem;
+    background-color: #ffc926;
+    color: black;
+}
+
+.btn-plus {
+    margin-left: .5rem;
+    background-color: #ffc926;
+    color: black;
 }

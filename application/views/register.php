@@ -1,4 +1,4 @@
-<div class="container-fluid textyellow" id="bghome">
+<div class="container-fluid text-yellow" id="bghome">
     <div class="row justify-content-center text-center" id="reg">
         <div class="col forma">
             <h1>Registracija</h1><br>
@@ -34,7 +34,7 @@
                     <?php echo form_error('passconf');?>
                 </div><br>
                 <div class="form-group">
-                    <button class="btn btn-yellow font-weight-bold" type="submit">OKE, SABMIT</button>
+                    <button class="btn btn-yellow font-weight-bold" type="submit">Registriraj se</button>
                 </div>
             </form>
         </div>

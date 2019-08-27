@@ -1,22 +1,28 @@
--Uredi "proizvod" tablicu:
-    -Omogući upload slika na bazu
--Forgot password gumb
+-Napravi shopping cart (preko sessiona?):
+    -Promjena količine
+    -Ukloni check za nevaljani index kod brisanja proizvoda iz kosarice
+-Rješenje različitih cijena istog proizvoda:
+    -U bazi za jedan proizvod postoje 3 cijene: kod izlistavanja svih proizvoda nema problema, samo se učitavaju svi podaci iz baze
+    -Postoje 3 gumba za dodavanje u košaricu, svaki odgovara različitoj cijeni/veličini pizze
+    -Dodan novi stupac u tablicu "stavka" -> velicina, koja određuje koju od 3 cijene će imati stavka u košarici
 -Neki efekti (fade in etc.)
--Popravi jokes
--Provjeri hardcoded URL-ove i prepravi ih sa base_url ili site_url
 -Security (Vidi security class na CI Documentation):
     -Dotjeraj form validation
     -Dodatno počisti user input (escaping, xss?)
     -Neki captcha ili security (ako korisnik 3 puta krivo unese lozinku nešto napraviti)
--Ručno zatvori konekcije na bazu?
--Izmjena stranice ovisno o vrsti korisnika
+    -Ne daj access di se ne smije!
 -Postavi alt za slike
 -Setup CSRF
 -Tooltips
 -Bootstrap spinners?
 -Aria
 -Shortcuts za height i width (npr h-75 i w-75)
--Fix footer
 -Fix izgled za male uređaje
+-Automatska prijava nakon registracije
+-User opcije na "profil" dropdownu:
+    -Promjena podataka, postavke
+    -Logout
+-Makni shopping cart dropdown na stranici kosarica
+-Fix kosarica view
 
 -Admin stranica (admin tools)
