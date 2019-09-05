@@ -17,7 +17,7 @@ a {
     color:white;
 }
 
-.navbar {
+#main-nav {
     background-color: #ffc926;
     padding: 0.5rem 0.5rem;
 }
@@ -156,14 +156,47 @@ a {
     margin-bottom: 3rem;
 }
 
-.btn-min {
-    margin-right: .5rem;
-    background-color: #ffc926;
-    color: black;
-}
-
 .btn-plus {
     margin-left: .5rem;
     background-color: #ffc926;
     color: black;
+}
+
+#profil-naslov {
+    margin: 0rem 1rem;
+}
+
+.form-control:disabled {
+    font-weight: bold;
+}
+
+.lil-edit {
+    margin-left: 1rem;
+}
+
+.adr {
+    margin-right: 1rem;
+}
+.recenter {
+    margin-left: 2rem;
+}
+
+#email-unedit, #mail-conf-group, #pass-unedit, #pass-conf-group, #promjeni, #old-lozinka-group, .unedit, .adresafull, #adr-unadd {
+    display: none;
+}
+
+.adrnaslov {
+    border: 3px solid #ffc926;
+    padding: .75rem;
+    margin: .5rem;
+    flex: 0 0 420px;
+}
+
+.adr-item {
+    margin: .5rem;
+    padding: .5rem;
+}
+
+#adr-container {
+    border: 3px solid #ffc926;
 }

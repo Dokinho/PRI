@@ -1,13 +1,10 @@
--Napravi shopping cart (preko sessiona?):
-    -Promjena količine
-    -Ukloni check za nevaljani index kod brisanja proizvoda iz kosarice
--Rješenje različitih cijena istog proizvoda:
-    -U bazi za jedan proizvod postoje 3 cijene: kod izlistavanja svih proizvoda nema problema, samo se učitavaju svi podaci iz baze
-    -Postoje 3 gumba za dodavanje u košaricu, svaki odgovara različitoj cijeni/veličini pizze
-    -Dodan novi stupac u tablicu "stavka" -> velicina, koja određuje koju od 3 cijene će imati stavka u košarici
+-Dovrši naručivanje:
+    -Napravi stranicu "Moje narudžbe" u kojoj se nalazi povijest narudžbi
+    -Dodaj troškove dostave (u header košaricu i u stranicu košarica)
+-Brisanje korisničkih računa
 -Neki efekti (fade in etc.)
 -Security (Vidi security class na CI Documentation):
-    -Dotjeraj form validation
+    -Dotjeraj form validation - PRVO NA REGISTER A ONDA KOPIRAJ NA OSTALE
     -Dodatno počisti user input (escaping, xss?)
     -Neki captcha ili security (ako korisnik 3 puta krivo unese lozinku nešto napraviti)
     -Ne daj access di se ne smije!
@@ -18,11 +15,12 @@
 -Aria
 -Shortcuts za height i width (npr h-75 i w-75)
 -Fix izgled za male uređaje
--Automatska prijava nakon registracije
--User opcije na "profil" dropdownu:
-    -Promjena podataka, postavke
-    -Logout
--Makni shopping cart dropdown na stranici kosarica
 -Fix kosarica view
+-Cleanup
+-Profil podaci:
+    -Provjera stare lozinke
+-Korisnik telefon
+-Custom radio buttons
+-Ne briši gostovu košaricu nakon registracije na sustav
 
 -Admin stranica (admin tools)

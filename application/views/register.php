@@ -1,7 +1,7 @@
 <div class="container-fluid text-yellow" id="bghome">
     <div class="row justify-content-center text-center" id="reg">
         <div class="col forma">
-            <h1>Registracija</h1><br>
+            <br><h1>Registracija</h1><br>
             <form action="<?php echo site_url('register');?>" method="post">
                 <div class="form-group">
                     <label class="form-text" for="ime">Ime</label>
@@ -12,6 +12,11 @@
                     <label class="form-text" for="prezime">Prezime</label>
                     <input type="text" class="form-control" name="prezime" id="prezime" placeholder="Unesite vaše prezime" value="<?php echo set_value('prezime');?>">
                     <?php echo form_error('prezime');?>
+                </div>
+                <div class="form-group">
+                    <label class="form-text" for="telefon">Mobitel/Telefon</label>
+                    <input type="text" class="form-control" name="telefon" id="telefon" placeholder="Unesite broj mobitela/telefona" value="<?php echo set_value('telefon');?>">
+                    <?php echo form_error('telefon');?>
                 </div>
                 <div class="form-group">
                     <label class="form-text" for="email">Email</label>

@@ -12,6 +12,7 @@ class Login extends CI_Controller
     public function index()
     {
         $data['title'] = 'NetPizza - Prijava';
+        $data['page'] = 'login';
         $this->load->view('static/header', $data);
 
         //Preusmjeri prijavljene korisnike na početnu stranicu
@@ -63,8 +64,10 @@ class Login extends CI_Controller
                     } else {
                         $_SESSION['tip_korisnika'] = 2;
                     }
+                    $_SESSION['id'] = $rezultat['result']->id;
                     $_SESSION['ime'] = $rezultat['result']->ime;
                     $_SESSION['prezime'] = $rezultat['result']->prezime;
+                    $_SESSION['telefon'] = $rezultat['result']->telefon;
                     $_SESSION['email'] = $rezultat['result']->email;
                     $_SESSION['logged_in'] = true;
                     $_SESSION['kosarica'] = array();

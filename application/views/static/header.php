@@ -3,8 +3,6 @@
   if (!isset($_SESSION['logged_in'])) {
       $_SESSION['tip_korisnika'] = 0;
   }
-
-  //Shopping cart
 ?>
 <!doctype html>
 <html lang="en">
@@ -14,17 +12,13 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
     integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="<?php echo base_url('assets/css/stil.css');?>">
+    <script src="<?php echo base_url('assets/js/skripta.js');?>"></script>
     <title><?php echo $title?></title>
 </head>
   <body>
-  <!-- DEBUG -->
-  <p class="text-yellow"><?php echo 'Tip korisnika: ', $_SESSION['tip_korisnika'];?>
-  <a href="<?php echo site_url('testlogout');?>"> Odjava</a>|<?php if (isset($_SESSION['kos_broj'])) {
-    echo '<a href="'.site_url('jelovnik/ukloni/'.$_SESSION['kos_broj']).'">Ukloni iz K</a></p>';}?>
-    <!--DO TU-->
     <header>
     <!-- Navigacijska traka -->
-      <nav class="navbar navbar-expand navbar-light justify-content-between">
+      <nav class="navbar navbar-expand justify-content-between" id="main-nav">
         <ul class="navbar-nav flex-row">
         <!--Home-->
           <li class="nav-item d-none d-sm-inline">
@@ -40,22 +34,38 @@
         <ul class="navbar-nav flex-row-reverse">
         <!--Profil-->
           <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-              <img src="<?php echo base_url('assets/icons/profile32.png');?>">
-            </a>
-            <!--Profil dropdown menu-->
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true"
+              aria-expanded="false"><img src="<?php echo base_url('assets/icons/profile32.png');?>"></a>
+            <?php if (!isset($_SESSION['logged_in'])):?>
+            <!--Profil dropdown menu za goste-->
             <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
-              <h6 class="dropdown-header">Profil</h6>
+              <h6 class="dropdown-header">Gost</h6>
               <div class="dropdown-divider"></div>
-              <a class="dropdown-item" href="#">Prijava</a>
-              <a class="dropdown-item" href="#">Registracija</a>
+              <a class="dropdown-item" href="<?php echo site_url('login');?>">Prijava</a>
+              <a class="dropdown-item" href="<?php echo site_url('register');?>">Registracija</a>
             </div>
+            <?php else:?>
+            <!--Profil dropdown menu za korisnike-->
+            <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+              <h6 class="dropdown-header"><?php echo $_SESSION['ime'];?></h6>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="<?php echo site_url('profil');?>">Osobni podaci</a>
+              <a class="dropdown-item" href="<?php echo site_url('profil/index/adrese');?>">Adrese</a>
+              <a class="dropdown-item" href="#">Moje narudžbe</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="<?php echo site_url('logout');?>">Odjava</a>
+            </div>
+            <?php endif;?>
           </li>
           <!--Košarica-->
-          <li class="nav-item dropdown d-none d-sm-inline">
-            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-              <img src="<?php echo base_url('assets/icons/cart32.png');?>">
-            </a>
+          <!--Ako je korisnik na stranici 'kosarica' ili je gost, sakrij košarica dropdown ikonu-->
+          <?php if ($page != 'kosarica'):?>
+            <li class="nav-item dropdown d-none d-sm-inline">
+          <?php else:?>
+            <li class="nav-item dropdown d-none">
+          <?php endif;?>
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true"
+            aria-expanded="false"><img src="<?php echo base_url('assets/icons/cart32.png');?>"></a>
             <!--Košarica dropdown menu-->
             <div class="d-none d-sm-inline">
             <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
@@ -73,9 +83,9 @@
                   <span><?php echo $stavka['naziv'];?> - <?php echo $stavka['velicina'];?></span>
                 </div>
                 <div class="d-inline kos-grupa">
-                  <a class="text-black" href="#">&minus;</a>
+                  <a class="text-black" href="<?php echo site_url('jelovnik/kolminus/'.$indeks.'/'.$page);?>">&minus;</a>
                   <span><?php echo $stavka['kolicina'];?></span>
-                  <a class="text-black" href="#">+</a>
+                  <a class="text-black" href="<?php echo site_url('jelovnik/kolplus/'.$indeks.'/'.$page);?>">+</a>
                 </div>
                 <div class="d-inline kos-grupa">
                   <span class="text-black" href="#"><?php echo $stavka['cijena'];?> kn</span>
@@ -103,8 +113,12 @@
               </div>
             </div>
           </li>
-          <!--Košarica za male ekrane-->
-          <li class="nav-item d-inline d-sm-none">
+          <!--Košarica za male ekrane i stranicu 'kosarica' (ikona koja preusmjerava na stranicu 'kosarica' umjesto prikazivanja dropdown menija)-->
+          <?php if ($page != 'kosarica'):?>
+            <li class="nav-item d-inline d-sm-none">
+          <?php else:?>
+            <li class="nav-item d-inline">
+          <?php endif;?>
             <a class="nav-link" href="<?php echo site_url('kosarica');?>"><img src="<?php echo base_url('assets/icons/cart32.png');?>"></a>
           </li>
         </ul>

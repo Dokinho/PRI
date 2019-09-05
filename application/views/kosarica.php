@@ -3,7 +3,7 @@
   <div class="row justify-content-center text-center">
     <div class="col">
       <br><h1>Košarica</h1><br>
-    <form action="" method="post">
+    <form action="<?php echo site_url('kosarica/naruci');?>" method="post">
       <?php
         $ukupno = 0.0;
         $indeks = 0;
@@ -20,9 +20,9 @@
           <p><?php echo $stavka['opis'];?></p>
         </div>
         <div class="col-2">
-          <button class="d-inline btn btn-sm btn-min font-weight-bold">&minus;</button>
+          <a href="<?php echo site_url('kosarica/kolminus/'.$indeks);?>"><img src="<?php echo base_url('assets/icons/minus24.png');?>"></a>
           <p class="d-inline"><?php echo $stavka['kolicina'];?></p>
-          <button class="d-inline btn btn-sm btn-plus font-weight-bold">+</button>
+          <a href="<?php echo site_url('kosarica/kolplus/'.$indeks);?>"><img src="<?php echo base_url('assets/icons/plus24.png');?>"></a>
         </div>
         <div class="col-1">
           <p><?php echo $stavka['cijena'];?> kn</p>
@@ -36,11 +36,38 @@
         $indeks++;
         endforeach;?>
       <br>
+      <div class="d-flex flex-wrap align-items-center" id="adr-container">
+        <div class="adr-item">
+          <h3>Odaberi adresu:</h3>
+        </div>
+        <?php
+          $adrnum = 0;
+          foreach ($adrese as $i=>$adresa):
+          $adrnum++;
+        ?>
+        <div class="form-group adr-item">
+          <div class="form-check">
+            <input class="form-check-input" type="radio" id="<?php echo 'adr-input-'.$i;?>" value="<?php echo $adresa->id;?>" name="adr-choose">
+            <label for="<?php echo 'adr-input-'.$i;?>"><img src="<?php echo base_url('assets/icons/address24.png');?>">
+              <?php echo $adresa->naslov;?>
+            </label>
+          </div>
+        </div>
+        <?php
+          endforeach;
+          if ($adrnum > 0) echo '<script>oznaciAdresu()</script>';
+        ?>
+        <div class="adr-item">
+          <p style="margin:0px">Nova<a href="<?php echo site_url('profil/index/adrese');?>"><img class="lil-edit"
+            src="<?php echo base_url('assets/icons/plus24.png');?>"></a></p>
+        </div>
+      </div>
+      <br>
       <div class="row justify-content-center">
         <div class="col align-items-center">
           <h1>Ukupno: <?php echo $ukupno;?> kn</h1>
           <br>
-          <button class="btn font-weight-bold" id="naruci-big">Naruči</button>
+          <button class="btn font-weight-bold" type="submit" id="naruci-big">Naruči</button>
         </div>
       </div>
     </form>

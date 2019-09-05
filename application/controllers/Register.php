@@ -12,6 +12,7 @@ class Register extends CI_Controller
     public function index()
     {
         $data['title'] = 'NetPizza - Registracija';
+        $data['page'] = 'register';
         $this->load->view('static/header', $data);
 
         //Preusmjeri prijavljene korisnike na početnu stranicu
@@ -43,6 +44,12 @@ class Register extends CI_Controller
             array('required'=>'Unesite prezime', 'max_length'=>'Prezime ne može sadržavati više od 20 znakova.')
         );
         $this->form_validation->set_rules(
+            'telefon',
+            'Telefon',
+            'trim|required|max_length[16]',
+            array('required'=>'Unesite broj mobitela/telefona', 'max_length'=>'Broj mobitela/telefona ne može sadržavati više od 16 znakova.')
+        );
+        $this->form_validation->set_rules(
             'email',
             'Email',
             'trim|required|max_length[40]|valid_email|is_unique[korisnik.email]',
@@ -72,9 +79,26 @@ class Register extends CI_Controller
             $this->load->view('register');
             $this->load->view('static/footer');
         } else {
+            //Uspješna registracija
+            $bivsi_gost = $this->korisnik->dodaj();
+
+            //Automatska prijava na sustav
+            $_SESSION['tip_korisnika'] = $bivsi_gost['tip_korisnika'];
+            $_SESSION['ime'] = $bivsi_gost['ime'];
+            $_SESSION['prezime'] = $bivsi_gost['prezime'];
+            $_SESSION['telefon'] = $bivsi_gost['telefon'];
+            $_SESSION['email'] = $bivsi_gost['email'];
+            $_SESSION['logged_in'] = true;
+            $_SESSION['kosarica'] = array();
+            $_SESSION['kos_broj'] = 0;
+
+            $row = $this->korisnik->ucitajPoMailu();
+            $_SESSION['id'] = $row->id;
+
+            //Učitavanje potrebnih pogleda
             $this->load->view('register_success');
             $this->load->view('static/footer');
-            $this->korisnik->dodaj();
+            
         }
     }
 }

@@ -12,6 +12,11 @@ class Jelovnik extends CI_Controller
     //Učitava sve proizvode i prikazuje ih na stranici
     public function index()
     {
+        if (!isset($_SESSION['kosarica'])) {
+            $_SESSION['kosarica'] = array();
+            $_SESSION['kos_broj'] = 0;
+        }
+
         $data['title'] = 'NetPizza - Jelovnik';
         $data['page'] = 'jelovnik';
 
@@ -57,10 +62,25 @@ class Jelovnik extends CI_Controller
         redirect('jelovnik');
     }
 
-    public function ukloni($broj, $stranica)
+    public function ukloni($id, $stranica)
     {
-        array_splice($_SESSION['kosarica'], $broj, 1);
+        array_splice($_SESSION['kosarica'], $id, 1);
         $_SESSION['kos_broj']--;
+
+        redirect($stranica);
+    }
+
+    public function kolplus($id, $stranica)
+    {
+        $_SESSION['kosarica'][$id]['kolicina']++;
+
+        redirect($stranica);
+    }
+
+    public function kolminus($id, $stranica)
+    {
+        if ($_SESSION['kosarica'][$id]['kolicina'] > 1)
+        $_SESSION['kosarica'][$id]['kolicina']--;
 
         redirect($stranica);
     }

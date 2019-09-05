@@ -9,12 +9,16 @@ class Korisnik extends CI_Model
             'tip_korisnika'=>2, //admin = 1, korisnik = 2
             'ime'=>$this->input->post('ime'),
             'prezime'=>$this->input->post('prezime'),
+            'telefon'=>$this->input->post('telefon'),
             'email'=>$this->input->post('email'),
             'lozinka'=>password_hash($this->input->post('lozinka'), PASSWORD_BCRYPT)
         );
 
         //Ubacuje podatke u bazu
         $this->db->insert('korisnik', $data);
+
+        //Vraća unesene podatke kako bi se mogla izvršiti automatska prijava na sustav nakon uspješne registracije
+        return $data;
     }
 
     //Funkcija za login
@@ -47,5 +51,28 @@ class Korisnik extends CI_Model
             //Nema korisnika
             return array('result'=>$result, 'kod'=>2);
         }
+    }
+
+    public function ucitajPoMailu()
+    {
+        $sql = $this->db->get_where('korisnik', array('email'=>$_SESSION['email']));
+        return $sql->row();
+    }
+
+    public function izmjeni()
+    {   $mail = $this->input->post('email');
+        $lozinka = $this->input->post('lozinka');
+        
+        if (isset($mail)){
+            $data['email'] = $this->input->post('email');
+        }
+        if (isset($lozinka)) {
+            $data['lozinka'] = password_hash($this->input->post('lozinka'), PASSWORD_BCRYPT);
+        }
+
+        $this->db->where('email', $_SESSION['email']);
+        $this->db->update('korisnik', $data);
+
+        return $data;
     }
 }
