@@ -21,7 +21,7 @@ class Jelovnik extends CI_Controller
         $data['page'] = 'jelovnik';
 
         $this->load->view('static/header', $data);
-        $this->load->view('jelovnik');
+        $this->load->view('jelovnik/jelovnik');
 
         $proizvodi = $this->proizvod->ucitaj();
         foreach ($proizvodi as $proizvod) {
@@ -34,9 +34,9 @@ class Jelovnik extends CI_Controller
                 'cijena_s' => $proizvod->cijena_s,
                 'cijena_j' => $proizvod->cijena_j
             );
-            $this->load->view('jelovnik_item', $data);
+            $this->load->view('jelovnik/jelovnik_item', $data);
         };
-        $this->load->view('jelovnik_kraj');
+        $this->load->view('jelovnik/jelovnik_kraj');
         $this->load->view('static/footer');
     }
 

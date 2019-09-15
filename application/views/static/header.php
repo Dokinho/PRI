@@ -22,11 +22,11 @@
         <ul class="navbar-nav flex-row">
         <!--Home-->
           <li class="nav-item d-none d-sm-inline">
-            <a href="<?php echo site_url('home');?>"><img src="<?php echo base_url('assets/icons/home32.png');?>"></a>
+            <a class="nav-link" href="<?php echo site_url('home');?>"><img src="<?php echo base_url('assets/icons/home32.png');?>"></a>
           </li>
           <!--Jelovnik-->
           <li class="nav-item">
-            <a href="<?php echo site_url('jelovnik');?>"><img src="<?php echo base_url('assets/icons/menu32.png');?>"></a>
+            <a class="nav-link" href="<?php echo site_url('jelovnik');?>"><img src="<?php echo base_url('assets/icons/menu32.png');?>"></a>
           </li>
         </ul>
         <!--Naslov-->
@@ -51,7 +51,12 @@
               <div class="dropdown-divider"></div>
               <a class="dropdown-item" href="<?php echo site_url('profil');?>">Osobni podaci</a>
               <a class="dropdown-item" href="<?php echo site_url('profil/index/adrese');?>">Adrese</a>
-              <a class="dropdown-item" href="#">Moje narudžbe</a>
+              <a class="dropdown-item" href="<?php echo site_url('narudzbe')?>">Moje narudžbe</a>
+              <!--Dodatni link na administracijsku stranicu za administratore-->
+              <?php if ($_SESSION['tip_korisnika'] == 1):?>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="<?php echo site_url('admin');?>">Administracija</a>
+              <?php endif;?>
               <div class="dropdown-divider"></div>
               <a class="dropdown-item" href="<?php echo site_url('logout');?>">Odjava</a>
             </div>
@@ -121,6 +126,12 @@
           <?php endif;?>
             <a class="nav-link" href="<?php echo site_url('kosarica');?>"><img src="<?php echo base_url('assets/icons/cart32.png');?>"></a>
           </li>
+          <!--Administracijski alati-->
+          <?php if ($_SESSION['tip_korisnika'] == 1):?>
+          <li class="nav-item d-none d-sm-inline">
+            <a class="nav-link" href="<?php echo site_url('admin');?>"><img src="<?php echo base_url('assets/icons/admin32.png');?>"></a>
+          </li>
+              <?php endif;?>
         </ul>
       </nav>
     </header>

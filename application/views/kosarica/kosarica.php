@@ -68,6 +68,7 @@
           <h1>Ukupno: <?php echo $ukupno;?> kn</h1>
           <br>
           <button class="btn font-weight-bold" type="submit" id="naruci-big">Naruči</button>
+          <?php if ($adrnum < 1) echo '<script>narucivanjeZabranjeno()</script>';?>
         </div>
       </div>
     </form>
@@ -89,5 +90,3 @@
     </div>
   </div>
 </div>
-
-<!-- Slika, naziv - veličina, opis, količina, cijena-->

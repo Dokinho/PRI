@@ -4,7 +4,7 @@
             <h1 class="display-4 font-weight-bold">Dobrodošli!</h1>
             <br>
             <div id="welcome-text">
-                <?php echo $welcome_text?>
+                <p><?php echo $welcome_text?></p>
             </div>
         </div>
     </div>

@@ -201,3 +201,25 @@ function oznaciAdresu() {
     var adresa = document.getElementById("adr-input-0");
     adresa.checked = "checked";
 }
+
+function prikaziNarudzbuToggle (id) {
+    var narudzba = document.getElementById("racfull" + id);
+
+    if (narudzba.style.display === "block") {
+        narudzba.style.display = "none";
+    } else {
+        narudzba.style.display = "block";
+    }
+}
+
+function brisanjeDozvoljeno() {
+    var zastita = document.getElementById("protecc");
+
+    zastita.value = "value";
+}
+
+function narucivanjeZabranjeno() {
+    var gumb = document.getElementById("naruci-big");
+
+    gumb.disabled = "disabled";
+}

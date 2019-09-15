@@ -57,5 +57,11 @@
                         <button class="btn btn-yellow font-weight-bold" type="submit">Spremi promjene</button>
                     </div>
                 </form>
+                <form action="<?php echo site_url('profil/ukloniracun');?>" method="post">
+                <input type="hidden" name="protecc" id="protecc" value>
+                    <div class="form-group">
+                        <button class="btn btn-danger font-weight-bold" type="submit" onmouseover="brisanjeDozvoljeno()">Obriši račun</button>
+                    </div>
+                </form>
                 <?php if ($mail_change) echo '<script>promjeniEmail();</script>';?>
                 <?php if ($pass_change) echo '<script>promjeniLozinku();</script>';?>

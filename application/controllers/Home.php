@@ -13,16 +13,16 @@ class Home extends CI_Controller
         //Postavi drugačiji tekst na početnoj stranici, ovisno o tipu korisnika
         switch ($_SESSION['tip_korisnika']) {
             case 0: //Gost
-                $data['welcome_text'] = '<p>Nudimo brzu dostavu raznih vrsta ukusnih pizza.<br>Za početak možete pogledati naš <a href="'.
-                site_url('jelovnik').'">jelovnik</a>.<br>Ako ste već registrirani korisnik, prijavite se <a href="'.site_url('login').'">ovdje</a>.</p>';
+                $data['welcome_text'] = 'Nudimo brzu dostavu raznih vrsta ukusnih pizza.<br>Za početak možete pogledati naš <a href="'.
+                site_url('jelovnik').'">jelovnik</a>.<br>Ako ste već registrirani korisnik, prijavite se <a href="'.site_url('login').'">ovdje</a>.';
             break;
             case 1: //Administrator
             case 2: //Korisnik
-                $data['welcome_text'] = '<p>Nudimo brzu dostavu raznih vrsta ukusnih pizza.<br>Za početak možete pogledati naš <a href="'.
+                $data['welcome_text'] = 'Nudimo brzu dostavu raznih vrsta ukusnih pizza.<br>Za početak možete pogledati naš <a href="'.
                 site_url('jelovnik').'">jelovnik</a>.';
             break;
             default:
-                $data['welcome_text'] = '<p>Došlo je do greške u sustavu</p>';
+                $data['welcome_text'] = 'Došlo je do greške u sustavu';
         }
         
         $this->load->view('home', $data);

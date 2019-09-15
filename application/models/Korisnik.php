@@ -75,4 +75,38 @@ class Korisnik extends CI_Model
 
         return $data;
     }
+
+    public function ukloni()
+    {
+        $id = $_SESSION['id'];
+
+        //"Brisanje" korisnikovih adresa i računa
+        $data['id_korisnik'] = 0;
+
+        $this->db->where('id_korisnik', $id);
+        $this->db->update('adresa', $data);
+
+        $this->db->where('id_korisnik', $id);
+        $this->db->update('racun', $data);
+
+        //Brisanje korisnika
+        $this->db->where('id', $id);
+        $this->db->delete('korisnik');
+
+        //Odjava
+        session_destroy();
+    }
+
+    public function ucitajSve()
+    {
+        $sql = $this->db->get('korisnik');
+        return $sql->result();
+    }
+
+    public function promjeniTip($id, $tip)
+    {
+        $this->db->where('id', $id);
+        $data['tip_korisnika'] = $tip;
+        $this->db->update('korisnik', $data);
+    }
 }

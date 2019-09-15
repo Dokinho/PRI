@@ -9,7 +9,7 @@
             <tbody>
                 <tr>
                     <td scope="row">Mala</td>
-                    <td scope="row">
+                    <td>
                         <form class="form-inline justify-content-end" action="<?php echo site_url('jelovnik/dodaj/'.$id.'/mala');?>">
                             <label class="form-text"><?php echo $cijena_m;?> kn</label>
                             <input type="image" class="add" src="<?php echo base_url('assets/icons/plus24.png');?>">
@@ -18,7 +18,7 @@
                 </tr>
                 <tr>
                     <td scope="row">Srednja</td>
-                    <td scope="row">
+                    <td>
                         <form class="form-inline justify-content-end" action="<?php echo site_url('jelovnik/dodaj/'.$id.'/srednja');?>">
                             <label class="form-text"><?php echo $cijena_s;?> kn</label>
                             <input type="image" class="add" src="<?php echo base_url('assets/icons/plus24.png');?>">
@@ -27,7 +27,7 @@
                 </tr>
                 <tr>
                     <td scope="row">Jumbo</td>
-                    <td scope="row">
+                    <td>
                         <form class="form-inline justify-content-end" action="<?php echo site_url('jelovnik/dodaj/'.$id.'/jumbo');?>">
                             <label class="form-text"><?php echo $cijena_j;?> kn</label>
                             <input type="image" class="add" src="<?php echo base_url('assets/icons/plus24.png');?>">

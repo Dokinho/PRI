@@ -81,8 +81,8 @@ class Profil extends CI_Controller
                     $data['pass_change'] = false;
                 }
     
-                $this->load->view('podaci', $data);
-                $this->load->view('podaci_failure', $data);
+                $this->load->view('podaci/podaci', $data);
+                $this->load->view('podaci/podaci_failure', $data);
                 $this->load->view('static/footer');
             } else {
                 //Ispravan unos
@@ -94,13 +94,13 @@ class Profil extends CI_Controller
                     $_SESSION['email'] = $novo['email'];
                 }
     
-                $this->load->view('podaci', $data);
-                $this->load->view('podaci_success', $data);
+                $this->load->view('podaci/podaci', $data);
+                $this->load->view('podaci/podaci_success', $data);
                 $this->load->view('static/footer');
             }
         } else {
             //Otvoren tab Adrese
-            $this->load->view('adrese', $data);
+            $this->load->view('adrese/adrese', $data);
 
             //Pravila za valjanost forme za adrese
             $this->form_validation->set_rules(
@@ -152,13 +152,13 @@ class Profil extends CI_Controller
                         'ulica'=>$adresa->ulica,
                         'kucni_broj'=>$adresa->kucni_broj
                     );
-                    $this->load->view('adrese_item', $data);
+                    $this->load->view('adrese/adrese_item', $data);
                     $maxindeks++;
                 }
                 $data['max_index'] = $maxindeks;
                 $data['adr_change'] = $adr;
 
-                $this->load->view('adrese_failure', $data);
+                $this->load->view('adrese/adrese_failure', $data);
                 $this->load->view('static/footer');
             } else {
                 //Ispravan unos
@@ -182,12 +182,12 @@ class Profil extends CI_Controller
                         'ulica'=>$adresa->ulica,
                         'kucni_broj'=>$adresa->kucni_broj
                     );
-                    $this->load->view('adrese_item', $data);
+                    $this->load->view('adrese/adrese_item', $data);
                     $maxindeks++;
                 }
                 $data['max_index'] = $maxindeks;
 
-                $this->load->view('adrese_success', $data);
+                $this->load->view('adrese/adrese_success', $data);
                 $this->load->view('static/footer');
             }
         }
@@ -241,7 +241,7 @@ class Profil extends CI_Controller
         if ($this->form_validation->run() == false) {
             $this->load->view('static/header', $data);
             $this->load->view('profil');
-            $this->load->view('adrese', $data);
+            $this->load->view('adrese/adrese', $data);
 
 
             $adrese = $this->adresa->ucitaj();
@@ -257,12 +257,12 @@ class Profil extends CI_Controller
                     'ulica'=>$adresa->ulica,
                     'kucni_broj'=>$adresa->kucni_broj
                 );
-                $this->load->view('adrese_item', $data);
+                $this->load->view('adrese/adrese_item', $data);
                 $maxindeks++;
             }
             $data['max_index'] = $maxindeks;
 
-            $this->load->view('adrese_failure', $data);
+            $this->load->view('adrese/adrese_failure', $data);
             $this->load->view('static/footer');
         }
         else {
@@ -270,4 +270,14 @@ class Profil extends CI_Controller
         redirect('profil/index/adrese');
         }
     }
+
+    public function ukloniRacun ()
+    {
+        if ($this->input->post('protecc')) {
+            $this->korisnik->ukloni();
+            redirect('home');
+        } else {
+            redirect('profil');
+        }
+    }   
 }

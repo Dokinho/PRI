@@ -13,14 +13,14 @@ class Kosarica extends CI_Controller
 
         switch ($_SESSION['tip_korisnika']) {
             case 0: //Gost
-                $this->load->view('kosarica_gost', $data);
+                $this->load->view('kosarica/kosarica_gost', $data);
             break;
             case 1: //Administrator
             case 2: //Korisnik
                 $this->load->model('adresa');
                 $data['adrese'] = $this->adresa->ucitaj();
             
-                $this->load->view('kosarica', $data);
+                $this->load->view('kosarica/kosarica', $data);
             break;
             default: //Nešto ne valja
         }
@@ -62,7 +62,7 @@ class Kosarica extends CI_Controller
             $data['page'] = 'kosarica';
     
             $this->load->view('static/header', $data);
-            $this->load->view('kosarica_success');      
+            $this->load->view('kosarica/kosarica_success');      
             $this->load->view('static/footer');
         }
         else {
