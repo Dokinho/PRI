@@ -181,7 +181,7 @@ a {
     margin-left: 2rem;
 }
 
-#email-unedit, #mail-conf-group, #pass-unedit, #pass-conf-group, #promjeni, #old-lozinka-group, .unedit, .adresafull, #adr-unadd, .racun-full {
+#email-unedit, #mail-conf-group, #pass-unedit, #pass-conf-group, #promjeni, #old-lozinka-group, .unedit, .adresafull, #adr-unadd, .racun-full, .pizedit {
     display: none;
 }
 
@@ -224,4 +224,10 @@ a {
 .btn-admin {
     white-space: normal;
     min-width: 280px;
+}
+
+.ap:disabled {
+    background-color: black;
+    color: #ffc926;
+    border: 0px;
 }

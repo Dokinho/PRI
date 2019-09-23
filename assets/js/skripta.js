@@ -1,4 +1,5 @@
-let editCount = 0;
+let podaciEditCount = 0;
+let pizzeEditcount = 0;
 
 function promjeniEmail() {
     //Polja za unos
@@ -26,7 +27,7 @@ function promjeniEmail() {
 
     mailChange.value = "value";
 
-    editCount++;
+    podaciEditCount++;
     hideShowGumb();
 }
 
@@ -58,7 +59,7 @@ function unPromjeniEmail() {
 
     mailChange.value = "";
 
-    editCount--;
+    podaciEditCount--;
     hideShowGumb();
 }
 
@@ -94,7 +95,7 @@ function promjeniLozinku () {
 
     passChange.value = "value";
 
-    editCount++;
+    podaciEditCount++;
     hideShowGumb();
 }
 
@@ -130,14 +131,14 @@ function unPromjeniLozinku () {
 
     passChange.value = "";
 
-    editCount--;
+    podaciEditCount--;
     hideShowGumb();
 }
 
 function hideShowGumb () {
     var gumb = document.getElementById("promjeni");
 
-    if (editCount > 0) gumb.style.display = "block";
+    if (podaciEditCount > 0) gumb.style.display = "block";
     else gumb.style.display = "none";
 }
 
@@ -222,4 +223,57 @@ function narucivanjeZabranjeno() {
     var gumb = document.getElementById("naruci-big");
 
     gumb.disabled = "disabled";
+}
+
+function urediPizzu(id) {
+    //Ikonice
+    var edit = document.getElementById("pe" + id);
+    var unEdit = document.getElementById("pue" + id);
+
+    var trPizza = document.getElementById("tr" + id);
+    var children = Array.from(trPizza.children);
+    var controlF = document.getElementById("pcf" + id);
+
+    edit.style.display = "none";
+    unEdit.style.display = "inline";
+
+    children.forEach(function(td){
+        if (td.firstElementChild.tagName == "INPUT" || td.firstElementChild.tagName == "TEXTAREA") {
+            td.firstElementChild.removeAttribute("disabled");
+        }
+    });
+    controlF.removeAttribute("disabled");
+
+    pizzeEditcount++;
+    hideShowPizzaGumb();
+}
+
+function unUrediPizzu(id) {
+    //Ikonice
+    var edit = document.getElementById("pe" + id);
+    var unEdit = document.getElementById("pue" + id);
+
+    var trPizza = document.getElementById("tr" + id);
+    var children = Array.from(trPizza.children);
+    var controlF = document.getElementById("pcf" + id);
+
+    edit.style.display = "inline";
+    unEdit.style.display = "none";
+
+    children.forEach(function(td){
+        if (td.firstElementChild.tagName == "INPUT" || td.firstElementChild.tagName == "TEXTAREA") {
+            td.firstElementChild.setAttribute("disabled", "");
+        }
+    });
+    controlF.setAttribute("disabled", "");
+
+    pizzeEditcount--;
+    hideShowPizzaGumb();
+}
+
+function hideShowPizzaGumb () {
+    var gumb = document.getElementById("promjeni");
+
+    if (pizzeEditcount > 0) gumb.style.display = "inline";
+    else gumb.style.display = "none";
 }

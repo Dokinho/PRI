@@ -1,6 +1,5 @@
 -Admin stranica (admin tools)
     -Započeto, treba dovršiti:
-        -"Pregled administratora"
         -"Dodaj novu pizzu"
         -"Zaprimljene narudžbe"
         -Makni limit na prikazu narudžbi (u modelu)

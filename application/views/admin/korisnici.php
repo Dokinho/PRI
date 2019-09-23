@@ -4,6 +4,26 @@
             <br><h1>Korisnici</h1><br>
         </div>
     </div>
+    <!--Tražilica-->
+        <div class="d-flex flex-wrap align-items-center justify-content-center">
+        <h2>Tražilica:</h2>
+            <form class="form" action="<?php echo site_url('admin/trazikorisnika/');?>" method="post">
+                <div class="form-group adr-item">
+                    <input type="text" id="filter" name="filter">
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" id="ime" value="ime" name="pocemu" checked>
+                        <label class="my-auto" for="ime">Po imenu/prezimenu</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" id="mail" value="mail" name="pocemu">
+                        <label class="my-auto" for="mail">Po e-mailu</label>
+                    </div>
+                    <button class="btn btn-yellow font-weight-bold" type="submit">Traži</button>
+                </div>
+                <div class="form-group">
+                </div>
+            </form>
+        </div>
     <div class="row">
         <div class="col">
             <!--Početak tablice-->

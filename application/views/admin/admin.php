@@ -13,7 +13,7 @@
                     <button class="btn btn-yellow btn-admin font-weight-bold" type="submit">Pregled/izmjena korisnika</button>
                 </div>
             </form>
-            <form>
+            <form action="<?php echo site_url('admin/administratori');?>">
                 <div class="form-group">
                     <button class="btn btn-yellow btn-admin font-weight-bold" disabled>Pregled administratora</button>
                 </div>

@@ -26,21 +26,46 @@ class Admin extends CI_Controller
         $this->load->view('static/footer');
     }
 
-    function korisnici()
+    function korisnici($filter = "", $pocemu = "ime")
     {
         $data['title'] = 'NetPizza - Administracija - Korisnici';
         $data['page'] = 'korisnici';
-        $data['korisnici'] = $this->korisnik->ucitajSve();
+
+        if ($pocemu == "ime") {
+            $data['korisnici'] = $this->korisnik->traziPoImenu($filter);
+        } else {
+            $data['korisnici'] = $this->korisnik->traziPoMailu($filter);
+        }
 
         $this->load->view('static/header', $data);
         $this->load->view('admin/korisnici', $data);
         $this->load->view('static/footer');
     }
 
+    /*Nekorišteno
+    function administratori()
+    {
+        $data['title'] = 'NetPizza - Administracija - Administratori';
+        $data['page'] = 'administratori';
+        $data['administratori'] = $this->korisnik->ucitajAdmine();
+
+        $this->load->view('static/header', $data);
+        $this->load->view('admin/admini', $data);
+        $this->load->view('static/footer');
+    }
+    */
+
     function promjeniKorisnika($id, $tip)
     {
         $this->korisnik->promjeniTip($id, $tip);
         redirect('admin/korisnici');
+    }
+
+    function traziKorisnika()
+    {
+        $filter = $this->input->post('filter');
+        $pocemu = $this->input->post('pocemu');
+        redirect ('admin/korisnici/'.$filter.'/'.$pocemu);
     }
 
     function pizze()
@@ -54,9 +79,26 @@ class Admin extends CI_Controller
         $this->load->view('static/footer');
     }
 
+    function promjeniPizze()
+    {
+        $this->proizvod->izmjeni();
+        redirect('admin/pizze'); 
+    }
+
+    function ukloniPizzu($id = 0)
+    {
+        $this->proizvod->ukloni($id);
+        redirect('admin/pizze');
+    }
+
     function dodajPizzu()
     {
+        $data['title'] = 'NetPizza - Administracija - Dodaj Pizzu';
+        $data['page'] = 'dodajpizzu';
 
+        $this->load->view('static/header', $data);
+        $this->load->view('admin/dodajpizzu', $data);
+        $this->load->view('static/footer');
     }
 
     function narudzbe()

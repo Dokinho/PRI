@@ -97,11 +97,13 @@ class Korisnik extends CI_Model
         session_destroy();
     }
 
+    /* Nekorišteno
     public function ucitajSve()
     {
         $sql = $this->db->get('korisnik');
         return $sql->result();
     }
+    */
 
     public function promjeniTip($id, $tip)
     {
@@ -109,4 +111,25 @@ class Korisnik extends CI_Model
         $data['tip_korisnika'] = $tip;
         $this->db->update('korisnik', $data);
     }
+
+    public function traziPoImenu($string = "")
+    {
+        $sql = $this->db->query('SELECT * FROM korisnik k WHERE (LOCATE("'.$string.'", k.ime) > 0) OR (LOCATE("'.$string.'", k.prezime) > 0);');
+        return $sql->result();
+    }
+
+    public function traziPoMailu($string = "")
+    {
+        $sql = $this->db->query('SELECT * FROM korisnik k WHERE (LOCATE("'.$string.'", k.email) > 0);');
+        return $sql->result();
+    }
+
+    /* Nekorišteno
+    public function ucitajAdmine()
+    {
+        $this->db->where('tip_korisnika', 'administrator');
+        $sql = $this->db->get('korisnik');
+        return $sql->result();
+    }
+    */
 }
