@@ -69,7 +69,7 @@ class Racun extends CI_Model
         $sql = $this->db->query(
             'SELECT k.ime, k.prezime, p.naziv, s.velicina, s.cijena, s.kolicina '.
             'FROM korisnik k, proizvod p, stavka s, racun r '.
-            'WHERE r.id = '.$rID.' AND p.id = s.id_proizvod AND r.id = s.id_racun AND r.id = k.id;'
+            'WHERE r.id = '.$rID.' AND p.id = s.id_proizvod AND r.id = s.id_racun AND r.id_korisnik = k.id;'
         );
         return $sql->result();
     }

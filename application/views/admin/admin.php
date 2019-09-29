@@ -32,7 +32,7 @@
             </form>
             <form action="<?php echo site_url('admin/dodajpizzu');?>">
                 <div class="form-group">
-                    <button class="btn btn-yellow btn-admin font-weight-bold" disabled>Dodaj novu pizzu</button>
+                    <button class="btn btn-yellow btn-admin font-weight-bold">Dodaj novu pizzu</button>
                 </div>
             </form>
         </div>

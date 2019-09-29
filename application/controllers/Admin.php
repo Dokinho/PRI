@@ -96,6 +96,9 @@ class Admin extends CI_Controller
         $data['title'] = 'NetPizza - Administracija - Dodaj Pizzu';
         $data['page'] = 'dodajpizzu';
 
+        $this->load->library('form_validation');
+        $this->form_validation->set_error_delimiters('<p class="form-error">', '</p>');
+
         $this->load->view('static/header', $data);
         $this->load->view('admin/dodajpizzu', $data);
         $this->load->view('static/footer');
