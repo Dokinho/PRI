@@ -1,1 +1,0 @@
-<div class="d-flex flex-row flex-wrap justify-content-center text-yellow">
