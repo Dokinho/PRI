@@ -37,44 +37,44 @@ class Register extends BaseController
         // $validation->set_error_delimiters('<p class="form-error">', '</p>');
 
         //Postavljanje pravila za provjeru valjanosti forme i error poruka
-        $validation->setRules(
+        $validation->setRule(
             'ime',
             'Ime',
             'trim|required|max_length[20]',
             array('required'=>'Unesite ime', 'max_length'=>'Ime ne može sadržavati više od 20 znakova.')
         );
-        $validation->setRules(
+        $validation->setRule(
             'prezime',
             'Prezime',
             'trim|required|max_length[20]',
             array('required'=>'Unesite prezime', 'max_length'=>'Prezime ne može sadržavati više od 20 znakova.')
         );
-        $validation->setRules(
+        $validation->setRule(
             'telefon',
             'Telefon',
             'trim|required|max_length[16]',
             array('required'=>'Unesite broj mobitela/telefona', 'max_length'=>'Broj mobitela/telefona ne može sadržavati više od 16 znakova.')
         );
-        $validation->setRules(
+        $validation->setRule(
             'email',
             'Email',
             'trim|required|max_length[40]|valid_email|is_unique[korisnik.email]',
             array('required'=>'Unesite email adresu.', 'max_length'=>'Email ne može sadržavati više od 40 znakova.', 'valid_email'=>'Unesena email adresa nije ispravna.',
             'is_unique'=>'Korisnički račun sa unesenom email adresom već postoji.')
         );
-        $validation->setRules(
+        $validation->setRule(
             'mailconf',
             'Potvrda emaila',
             'required|matches[email]',
             array('required'=>'Potvrdite email.','matches'=>'Email adrese se ne podudaraju.')
         );
-        $validation->setRules(
+        $validation->setRule(
             'lozinka',
             'Lozinka',
             'required',
             array('required'=>'Unesite lozinku.')
         );
-        $validation->setRules(
+        $validation->setRule(
             'passconf',
             'Potvrda lozinke',
             'required|matches[lozinka]',
@@ -104,7 +104,6 @@ class Register extends BaseController
             //Učitavanje potrebnih pogleda
             echo view('register_success');
             echo view('static/footer');
-            
         }
     }
 }

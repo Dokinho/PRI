@@ -19,27 +19,27 @@
                 <div class="form-group">
                     <label class="form-text" for="<?php echo 'ime'.$i?>">Ime</label>
                     <input type="text" class="form-control" name="<?php echo 'ime'.$i;?>" id="<?php echo 'ime'.$i?>" value="<?php echo $ime;?>">
-                    <?php echo form_error('ime'.$i);?>
+                    <?php //echo form_error('ime'.$i);?>
                 </div>
                 <div class="form-group">
                     <label class="form-text" for="<?php echo 'prezime'.$i?>">Prezime</label>
                     <input type="text" class="form-control" name="<?php echo 'prezime'.$i;?>" id="<?php echo 'prezime'.$i?>" value="<?php echo $prezime;?>">
-                    <?php echo form_error('prezime'.$i);?>
+                    <?php //echo form_error('prezime'.$i);?>
                 </div>
                 <div class="form-group">
                     <label class="form-text" for="<?php echo 'telefon'.$i?>">Telefon/Mobitel</label>
                     <input type="text" class="form-control" name="<?php echo 'telefon'.$i;?>" id="<?php echo 'telefon'.$i?>" value="<?php echo $telefon;?>">
-                    <?php echo form_error('telefon'.$i);?>
+                    <?php //echo form_error('telefon'.$i);?>
                 </div>
                 <div class="form-group">
                     <label class="form-text" for="<?php echo 'ulica'.$i?>">Ulica</label>
                     <input type="text" class="form-control" name="<?php echo 'ulica'.$i;?>" id="<?php echo 'ulica'.$i?>" value="<?php echo $ulica;?>">
-                    <?php echo form_error('ulica'.$i);?>
+                    <?php //echo form_error('ulica'.$i);?>
                 </div>
                 <div class="form-group">
                     <label class="form-text" for="<?php echo 'kucni_broj'.$i?>">Kućni broj</label>
                     <input type="text" class="form-control" name="<?php echo 'kucni_broj'.$i;?>" id="<?php echo 'kucni_broj'.$i?>" value="<?php echo $kucni_broj;?>">
-                    <?php echo form_error('kucni_broj'.$i);?>
+                    <?php //echo form_error('kucni_broj'.$i);?>
                 </div>
                 <div class="form-group">
                     <button class="btn btn-yellow font-weight-bold" type="submit">Spremi promjene</button>

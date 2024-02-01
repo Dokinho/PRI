@@ -36,14 +36,14 @@ class Profil extends BaseController
             //Otvoren tab Podaci
             //Pravila za valjanost forme za osobne podatke
             if ($this->input->post('mail-change')) {
-                $validation->setRules(
+                $validation->setRule(
                     'email',
                     'Email',
                     'trim|required|max_length[40]|valid_email|is_unique[korisnik.email]',
                     array('required'=>'Unesite email adresu.', 'max_length'=>'Email ne može sadržavati više od 40 znakova.', 'valid_email'=>'Unesena email adresa nije ispravna.',
                     'is_unique'=>'Korisnički račun sa unesenom email adresom već postoji.')
                 );
-                $validation->setRules(
+                $validation->setRule(
                     'mailconf',
                     'Potvrda emaila',
                     'required|matches[email]',
@@ -51,19 +51,19 @@ class Profil extends BaseController
                 );
             }
             if ($this->input->post('pass-change')) {
-                $validation->setRules(
+                $validation->setRule(
                     'oldlozinka',
                     'Stara lozinka',
                     'required',
                     array('required'=>'Unesite staru lozinku.')
                 );
-                $validation->setRules(
+                $validation->setRule(
                     'lozinka',
                     'Lozinka',
                     'required',
                     array('required'=>'Unesite novu lozinku.')
                 );
-                $validation->setRules(
+                $validation->setRule(
                     'passconf',
                     'Potvrda lozinke',
                     'required|matches[lozinka]',
@@ -109,31 +109,31 @@ class Profil extends BaseController
             echo view('adrese/adrese', $data);
 
             //Pravila za valjanost forme za adrese
-            $validation->setRules(
+            $validation->setRule(
                 'ime'.$adr,
                 'Ime',
                 'required',
                 array('required'=>'Treba')
             );
-            $validation->setRules(
+            $validation->setRule(
                 'prezime'.$adr,
                 'Prezime',
                 'required',
                 array('required'=>'Treba')
             );
-            $validation->setRules(
+            $validation->setRule(
                 'telefon'.$adr,
                 'Telefon',
                 'required',
                 array('required'=>'Treba')
             );
-            $validation->setRules(
+            $validation->setRule(
                 'ulica'.$adr,
                 'Ulica',
                 'required',
                 array('required'=>'Treba')
             );
-            $validation->setRules(
+            $validation->setRule(
                 'kucni_broj'.$adr,
                 'Kućni broj',
                 'required',
@@ -213,31 +213,31 @@ class Profil extends BaseController
         $data['adr_change'] = -1;
 
         //Pravila za valjanost forme za adrese
-        $validation->setRules(
+        $validation->setRule(
             'newime',
             'Ime',
             'required',
             array('required'=>'Treba')
         );
-        $validation->setRules(
+        $validation->setRule(
             'newprezime',
             'Prezime',
             'required',
             array('required'=>'Treba')
         );
-        $validation->setRules(
+        $validation->setRule(
             'newtelefon',
             'Telefon',
             'required',
             array('required'=>'Treba')
         );
-        $validation->setRules(
+        $validation->setRule(
             'newulica',
             'Ulica',
             'required',
             array('required'=>'Treba')
         );
-        $validation->setRules(
+        $validation->setRule(
             'newkucni_broj',
             'Kućni broj',
             'required',

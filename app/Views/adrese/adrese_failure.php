@@ -15,27 +15,27 @@
                     <div class="form-group">
                         <label class="form-text" for="newime">Ime</label>
                         <input type="text" class="form-control" name="newime" id="newime" value="<?php echo $_SESSION['ime'];?>">
-                        <?php echo form_error('newime');?>
+                        <?php //echo form_error('newime');?>
                     </div>
                     <div class="form-group">
                         <label class="form-text" for="prezime">Prezime</label>
                         <input type="text" class="form-control" name="newprezime" id="newprezime" value="<?php echo $_SESSION['prezime'];?>">
-                        <?php echo form_error('newprezime');?>
+                        <?php //echo form_error('newprezime');?>
                     </div>
                     <div class="form-group">
                         <label class="form-text" for="newtelefon">Telefon/Mobitel</label>
                         <input type="text" class="form-control" name="newtelefon" id="newtelefon" value="<?php echo $_SESSION['telefon'];?>">
-                        <?php echo form_error('newtelefon');?>
+                        <?php //echo form_error('newtelefon');?>
                     </div>
                     <div class="form-group">
                         <label class="form-text" for="newulica">Ulica</label>
                         <input type="text" class="form-control" name="newulica" id="newulica" placeholder="Unesite ulicu">
-                        <?php echo form_error('newulica');?>
+                        <?php //echo form_error('newulica');?>
                     </div>
                     <div class="form-group">
                         <label class="form-text" for="newkucni_broj">Kućni broj</label>
                         <input type="text" class="form-control" name="newkucni_broj" id="newkucni_broj" placeholder="Kućni broj">
-                        <?php echo form_error('newkucni_broj');?>
+                        <?php //echo form_error('newkucni_broj');?>
                     </div>
                     <div class="form-group">
                         <button class="btn btn-yellow font-weight-bold" type="submit">Dodaj adresu</button>

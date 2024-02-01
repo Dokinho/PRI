@@ -37,13 +37,13 @@ class Login extends BaseController
         // $validation->set_error_delimiters('<p class="form-error">', '</p>');
 
         //Postavljanje pravila za provjeru valjanosti forme i error poruka
-        $validation->setRules(
+        $validation->setRule(
             'email',
             'Email',
             'required|valid_email',
             array('required'=>'Unesite email adresu.', 'valid_email'=>'Unesena email adresa nije ispravna')
         );
-        $validation->setRules(
+        $validation->setRule(
             'lozinka',
             'Lozinka',
             'required',

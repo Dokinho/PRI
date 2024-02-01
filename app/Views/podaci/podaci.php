@@ -1,3 +1,4 @@
+<?php helper('form') ?>
     <div id="emailvar" style="display:none"><?php echo htmlspecialchars($_SESSION['email'])?></div>
     <div class="row justify-content-center text-center">
         <div class="col">
@@ -14,12 +15,12 @@
                         <div class="form-group">
                             <label class="form-text" for="ime">Ime</label>
                             <input type="text" class="form-control" name="ime" id="ime" value="<?php echo $_SESSION['ime'];?>">
-                            <?php echo form_error('ime');?>
+                            <?php //echo form_error('ime');?>
                         </div>
                         <div class="form-group">
                             <label class="form-text" for="prezime">Prezime</label>
                             <input type="text" class="form-control" name="prezime" id="prezime" value="<?php echo $_SESSION['prezime'];?>">
-                            <?php echo form_error('prezime');?>
+                            <?php //echo form_error('prezime');?>
                         </div>
                     </fieldset>
                     <div class="form-group">
@@ -28,30 +29,30 @@
                             onclick="unPromjeniEmail()" src="<?php echo base_url('assets/icons/close16.png');?>"></a></label>
                             <input type="email" class="form-control" name="email" id="email" placeholder="Unesite novu e-mail adresu"
                             value="<?php echo $_SESSION['email'];?>" disabled>
-                        <?php echo form_error('email');?>
+                        <?php //echo form_error('email');?>
                     </div>
                     <div class="form-group" id="mail-conf-group">
                         <label class="form-text" for="mailconf">Potvrdite Email</label>
                         <input type="email" class="form-control" name="mailconf" id="mailconf" placeholder="Potvrdite novu e-mail adresu"
                             value="<?php echo set_value('mailconf');?>">
-                        <?php echo form_error('mailconf');?>
+                        <?php //echo form_error('mailconf');?>
                     </div>
                     <div class="form-group" id="old-lozinka-group">
                         <label class="form-text recenter" for="oldlozinka">Stara lozinka<a href="#"><img class="lil-edit" id="pass-unedit"
                             onclick="unPromjeniLozinku()" src="<?php echo base_url('assets/icons/close16.png');?>"></a></label>
                         <input type="password" class="form-control" name="oldlozinka" id="oldlozinka" placeholder="Unesite staru lozinku">
-                        <?php echo form_error('oldlozinka');?>
+                        <?php //echo form_error('oldlozinka');?>
                     </div>
                     <div class="form-group" id="lozinka-group">
                         <label class="form-text recenter" for="lozinka">Lozinka<a href="#"><img class="lil-edit" id="pass-edit" onclick="promjeniLozinku()"
                             src="<?php echo base_url('assets/icons/edit16.png');?>"></a></label>
                         <input type="password" class="form-control" name="lozinka" id="lozinka" placeholder="Unesite novu lozinku" value="**********" disabled>
-                        <?php echo form_error('lozinka');?>
+                        <?php //echo form_error('lozinka');?>
                     </div>
                     <div class="form-group" id="pass-conf-group">
                         <label class="form-text" for="passconf">Potvrdite lozinku</label>
                         <input type="password" class="form-control" name="passconf" id="passconf" placeholder="Potvrdite novu lozinku">
-                        <?php echo form_error('passconf');?>
+                        <?php //echo form_error('passconf');?>
                     </div>
                     <div class="form-group" id="promjeni">
                         <button class="btn btn-yellow font-weight-bold" type="submit">Spremi promjene</button>
