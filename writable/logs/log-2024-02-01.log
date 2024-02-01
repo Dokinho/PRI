@@ -1,0 +1,467 @@
+CRITICAL - 2024-02-01 10:54:08 --> Error: Call to undefined method CodeIgniter\Database\SQLite3\Connection::where()
+in APPPATH/Models/Proizvod.php on line 26.
+ 1 APPPATH/Controllers/Jelovnik.php(33): App\Models\Proizvod->ucitaj()
+ 2 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\Jelovnik->index()
+ 3 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Jelovnik))
+ 4 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/Users/doks/repos/PRI/public/index.php')
+CRITICAL - 2024-02-01 10:54:30 --> Error: Call to undefined method CodeIgniter\Database\SQLite3\Connection::where()
+in APPPATH/Models/Proizvod.php on line 26.
+ 1 APPPATH/Controllers/Jelovnik.php(33): App\Models\Proizvod->ucitaj()
+ 2 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\Jelovnik->index()
+ 3 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Jelovnik))
+ 4 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/Users/doks/repos/PRI/public/index.php')
+CRITICAL - 2024-02-01 10:55:39 --> Error: Call to undefined method CodeIgniter\Database\SQLite3\Connection::get()
+in APPPATH/Models/Proizvod.php on line 27.
+ 1 APPPATH/Controllers/Jelovnik.php(33): App\Models\Proizvod->ucitaj()
+ 2 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\Jelovnik->index()
+ 3 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Jelovnik))
+ 4 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/Users/doks/repos/PRI/public/index.php')
+ERROR - 2024-02-01 11:27:22 --> Error connecting to the database: CodeIgniter\Database\Exceptions\DatabaseException: SQLite3 error: Unable to open database: unable to open database file in /Users/doks/repos/PRI/system/Database/SQLite3/Connection.php:92
+Stack trace:
+#0 /Users/doks/repos/PRI/system/Database/BaseConnection.php(392): CodeIgniter\Database\SQLite3\Connection->connect(false)
+#1 /Users/doks/repos/PRI/system/Database/SQLite3/Connection.php(59): CodeIgniter\Database\BaseConnection->initialize()
+#2 /Users/doks/repos/PRI/system/Database/BaseConnection.php(575): CodeIgniter\Database\SQLite3\Connection->initialize()
+#3 /Users/doks/repos/PRI/system/Database/BaseConnection.php(1410): CodeIgniter\Database\BaseConnection->query('SELECT "NAME" F...')
+#4 /Users/doks/repos/PRI/system/Commands/Database/ShowTableInfo.php(105): CodeIgniter\Database\BaseConnection->listTables()
+#5 /Users/doks/repos/PRI/system/CLI/Commands.php(65): CodeIgniter\Commands\Database\ShowTableInfo->run(Array)
+#6 /Users/doks/repos/PRI/system/CLI/Console.php(46): CodeIgniter\CLI\Commands->run('db:table', Array)
+#7 /Users/doks/repos/PRI/spark(102): CodeIgniter\CLI\Console->run()
+#8 {main}
+CRITICAL - 2024-02-01 11:27:22 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [SQLite3]: SQLite3 error: Unable to open database: unable to open database file
+in SYSTEMPATH/Database/BaseConnection.php on line 428.
+ 1 SYSTEMPATH/Database/SQLite3/Connection.php(59): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH/Database/BaseConnection.php(575): CodeIgniter\Database\SQLite3\Connection->initialize()
+ 3 SYSTEMPATH/Database/BaseConnection.php(1410): CodeIgniter\Database\BaseConnection->query('SELECT "NAME" FROM "SQLITE_MASTER" WHERE "TYPE" = \'table\' AND "NAME" NOT LIKE \'sqlite!_%\' ESCAPE \'!\'')
+ 4 SYSTEMPATH/Commands/Database/ShowTableInfo.php(105): CodeIgniter\Database\BaseConnection->listTables()
+ 5 SYSTEMPATH/CLI/Commands.php(65): CodeIgniter\Commands\Database\ShowTableInfo->run([...])
+ 6 SYSTEMPATH/CLI/Console.php(46): CodeIgniter\CLI\Commands->run('db:table', [...])
+ 7 ROOTPATH/spark(102): CodeIgniter\CLI\Console->run()
+ERROR - 2024-02-01 11:27:45 --> Error connecting to the database: CodeIgniter\Database\Exceptions\DatabaseException: SQLite3 error: Unable to open database: unable to open database file in /Users/doks/repos/PRI/system/Database/SQLite3/Connection.php:92
+Stack trace:
+#0 /Users/doks/repos/PRI/system/Database/BaseConnection.php(392): CodeIgniter\Database\SQLite3\Connection->connect(false)
+#1 /Users/doks/repos/PRI/system/Database/SQLite3/Connection.php(59): CodeIgniter\Database\BaseConnection->initialize()
+#2 /Users/doks/repos/PRI/system/Database/BaseConnection.php(575): CodeIgniter\Database\SQLite3\Connection->initialize()
+#3 /Users/doks/repos/PRI/system/Database/BaseConnection.php(1410): CodeIgniter\Database\BaseConnection->query('SELECT "NAME" F...')
+#4 /Users/doks/repos/PRI/system/Commands/Database/ShowTableInfo.php(105): CodeIgniter\Database\BaseConnection->listTables()
+#5 /Users/doks/repos/PRI/system/CLI/Commands.php(65): CodeIgniter\Commands\Database\ShowTableInfo->run(Array)
+#6 /Users/doks/repos/PRI/system/CLI/Console.php(46): CodeIgniter\CLI\Commands->run('db:table', Array)
+#7 /Users/doks/repos/PRI/spark(102): CodeIgniter\CLI\Console->run()
+#8 {main}
+CRITICAL - 2024-02-01 11:27:45 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [SQLite3]: SQLite3 error: Unable to open database: unable to open database file
+in SYSTEMPATH/Database/BaseConnection.php on line 428.
+ 1 SYSTEMPATH/Database/SQLite3/Connection.php(59): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH/Database/BaseConnection.php(575): CodeIgniter\Database\SQLite3\Connection->initialize()
+ 3 SYSTEMPATH/Database/BaseConnection.php(1410): CodeIgniter\Database\BaseConnection->query('SELECT "NAME" FROM "SQLITE_MASTER" WHERE "TYPE" = \'table\' AND "NAME" NOT LIKE \'sqlite!_%\' ESCAPE \'!\'')
+ 4 SYSTEMPATH/Commands/Database/ShowTableInfo.php(105): CodeIgniter\Database\BaseConnection->listTables()
+ 5 SYSTEMPATH/CLI/Commands.php(65): CodeIgniter\Commands\Database\ShowTableInfo->run([...])
+ 6 SYSTEMPATH/CLI/Console.php(46): CodeIgniter\CLI\Commands->run('db:table', [...])
+ 7 ROOTPATH/spark(102): CodeIgniter\CLI\Console->run()
+CRITICAL - 2024-02-01 11:31:48 --> Error: Call to undefined method CodeIgniter\Database\SQLite3\Connection::get()
+in APPPATH/Models/Proizvod.php on line 27.
+ 1 APPPATH/Controllers/Jelovnik.php(33): App\Models\Proizvod->ucitaj()
+ 2 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\Jelovnik->index()
+ 3 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Jelovnik))
+ 4 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/Users/doks/repos/PRI/public/index.php')
+CRITICAL - 2024-02-01 12:05:00 --> Error: Call to undefined method CodeIgniter\Database\SQLite3\Connection::get()
+in APPPATH/Models/Proizvod.php on line 27.
+ 1 APPPATH/Controllers/Jelovnik.php(33): App\Models\Proizvod->ucitaj()
+ 2 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\Jelovnik->index()
+ 3 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Jelovnik))
+ 4 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/Users/doks/repos/PRI/public/index.php')
+CRITICAL - 2024-02-01 12:05:05 --> Error: Call to undefined method CodeIgniter\Database\SQLite3\Connection::get()
+in APPPATH/Models/Proizvod.php on line 27.
+ 1 APPPATH/Controllers/Jelovnik.php(33): App\Models\Proizvod->ucitaj()
+ 2 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\Jelovnik->index()
+ 3 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Jelovnik))
+ 4 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/Users/doks/repos/PRI/public/index.php')
+CRITICAL - 2024-02-01 12:12:44 --> ErrorException: Undefined variable $db
+in APPPATH/Models/Proizvod.php on line 27.
+ 1 APPPATH/Models/Proizvod.php(27): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $db', '/Users/doks/repos/PRI/app/Models/Proizvod.php', 27)
+ 2 APPPATH/Controllers/Jelovnik.php(33): App\Models\Proizvod->ucitaj()
+ 3 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\Jelovnik->index()
+ 4 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Jelovnik))
+ 5 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/Users/doks/repos/PRI/public/index.php')
+ERROR - 2024-02-01 12:17:46 --> Error connecting to the database: CodeIgniter\Database\Exceptions\DatabaseException: SQLite3 doesn't support persistent connections. in /Users/doks/repos/PRI/system/Database/SQLite3/Connection.php:80
+Stack trace:
+#0 /Users/doks/repos/PRI/system/Database/BaseConnection.php(392): CodeIgniter\Database\SQLite3\Connection->connect(true)
+#1 /Users/doks/repos/PRI/system/Database/SQLite3/Connection.php(59): CodeIgniter\Database\BaseConnection->initialize()
+#2 /Users/doks/repos/PRI/system/Database/BaseConnection.php(575): CodeIgniter\Database\SQLite3\Connection->initialize()
+#3 /Users/doks/repos/PRI/system/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 /Users/doks/repos/PRI/app/Models/Proizvod.php(28): CodeIgniter\Database\BaseBuilder->get()
+#5 /Users/doks/repos/PRI/app/Controllers/Jelovnik.php(33): App\Models\Proizvod->ucitaj()
+#6 /Users/doks/repos/PRI/system/CodeIgniter.php(941): App\Controllers\Jelovnik->index()
+#7 /Users/doks/repos/PRI/system/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Jelovnik))
+#8 /Users/doks/repos/PRI/system/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 /Users/doks/repos/PRI/public/index.php(79): CodeIgniter\CodeIgniter->run()
+#10 /Users/doks/repos/PRI/system/Commands/Server/rewrite.php(47): require_once('/Users/doks/rep...')
+#11 {main}
+CRITICAL - 2024-02-01 12:17:46 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [SQLite3]: SQLite3 doesn't support persistent connections.
+in SYSTEMPATH/Database/BaseConnection.php on line 428.
+ 1 SYSTEMPATH/Database/SQLite3/Connection.php(59): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH/Database/BaseConnection.php(575): CodeIgniter\Database\SQLite3\Connection->initialize()
+ 3 SYSTEMPATH/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `proizvod`', [], false)
+ 4 APPPATH/Models/Proizvod.php(28): CodeIgniter\Database\BaseBuilder->get()
+ 5 APPPATH/Controllers/Jelovnik.php(33): App\Models\Proizvod->ucitaj()
+ 6 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\Jelovnik->index()
+ 7 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Jelovnik))
+ 8 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/Users/doks/repos/PRI/public/index.php')
+ERROR - 2024-02-01 12:17:52 --> Error connecting to the database: CodeIgniter\Database\Exceptions\DatabaseException: SQLite3 doesn't support persistent connections. in /Users/doks/repos/PRI/system/Database/SQLite3/Connection.php:80
+Stack trace:
+#0 /Users/doks/repos/PRI/system/Database/BaseConnection.php(392): CodeIgniter\Database\SQLite3\Connection->connect(true)
+#1 /Users/doks/repos/PRI/system/Database/SQLite3/Connection.php(59): CodeIgniter\Database\BaseConnection->initialize()
+#2 /Users/doks/repos/PRI/system/Database/BaseConnection.php(575): CodeIgniter\Database\SQLite3\Connection->initialize()
+#3 /Users/doks/repos/PRI/system/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 /Users/doks/repos/PRI/app/Models/Proizvod.php(28): CodeIgniter\Database\BaseBuilder->get()
+#5 /Users/doks/repos/PRI/app/Controllers/Jelovnik.php(33): App\Models\Proizvod->ucitaj()
+#6 /Users/doks/repos/PRI/system/CodeIgniter.php(941): App\Controllers\Jelovnik->index()
+#7 /Users/doks/repos/PRI/system/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Jelovnik))
+#8 /Users/doks/repos/PRI/system/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 /Users/doks/repos/PRI/public/index.php(79): CodeIgniter\CodeIgniter->run()
+#10 /Users/doks/repos/PRI/system/Commands/Server/rewrite.php(47): require_once('/Users/doks/rep...')
+#11 {main}
+CRITICAL - 2024-02-01 12:17:52 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [SQLite3]: SQLite3 doesn't support persistent connections.
+in SYSTEMPATH/Database/BaseConnection.php on line 428.
+ 1 SYSTEMPATH/Database/SQLite3/Connection.php(59): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH/Database/BaseConnection.php(575): CodeIgniter\Database\SQLite3\Connection->initialize()
+ 3 SYSTEMPATH/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `proizvod`', [], false)
+ 4 APPPATH/Models/Proizvod.php(28): CodeIgniter\Database\BaseBuilder->get()
+ 5 APPPATH/Controllers/Jelovnik.php(33): App\Models\Proizvod->ucitaj()
+ 6 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\Jelovnik->index()
+ 7 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Jelovnik))
+ 8 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/Users/doks/repos/PRI/public/index.php')
+CRITICAL - 2024-02-01 12:24:43 --> ErrorException: Undefined variable $db
+in APPPATH/Models/Proizvod.php on line 27.
+ 1 APPPATH/Models/Proizvod.php(27): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $db', '/Users/doks/repos/PRI/app/Models/Proizvod.php', 27)
+ 2 APPPATH/Controllers/Jelovnik.php(33): App\Models\Proizvod->ucitaj()
+ 3 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\Jelovnik->index()
+ 4 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Jelovnik))
+ 5 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/Users/doks/repos/PRI/public/index.php')
+ERROR - 2024-02-01 12:27:28 --> Error connecting to the database: CodeIgniter\Database\Exceptions\DatabaseException: SQLite3 doesn't support persistent connections. in /Users/doks/repos/PRI/system/Database/SQLite3/Connection.php:80
+Stack trace:
+#0 /Users/doks/repos/PRI/system/Database/BaseConnection.php(392): CodeIgniter\Database\SQLite3\Connection->connect(true)
+#1 /Users/doks/repos/PRI/system/Database/SQLite3/Connection.php(59): CodeIgniter\Database\BaseConnection->initialize()
+#2 /Users/doks/repos/PRI/system/Database/BaseConnection.php(575): CodeIgniter\Database\SQLite3\Connection->initialize()
+#3 /Users/doks/repos/PRI/system/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 /Users/doks/repos/PRI/app/Models/Proizvod.php(28): CodeIgniter\Database\BaseBuilder->get()
+#5 /Users/doks/repos/PRI/app/Controllers/Jelovnik.php(33): App\Models\Proizvod->ucitaj()
+#6 /Users/doks/repos/PRI/system/CodeIgniter.php(941): App\Controllers\Jelovnik->index()
+#7 /Users/doks/repos/PRI/system/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Jelovnik))
+#8 /Users/doks/repos/PRI/system/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 /Users/doks/repos/PRI/public/index.php(79): CodeIgniter\CodeIgniter->run()
+#10 /Users/doks/repos/PRI/system/Commands/Server/rewrite.php(47): require_once('/Users/doks/rep...')
+#11 {main}
+CRITICAL - 2024-02-01 12:27:28 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [SQLite3]: SQLite3 doesn't support persistent connections.
+in SYSTEMPATH/Database/BaseConnection.php on line 428.
+ 1 SYSTEMPATH/Database/SQLite3/Connection.php(59): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH/Database/BaseConnection.php(575): CodeIgniter\Database\SQLite3\Connection->initialize()
+ 3 SYSTEMPATH/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `proizvod`', [], false)
+ 4 APPPATH/Models/Proizvod.php(28): CodeIgniter\Database\BaseBuilder->get()
+ 5 APPPATH/Controllers/Jelovnik.php(33): App\Models\Proizvod->ucitaj()
+ 6 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\Jelovnik->index()
+ 7 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Jelovnik))
+ 8 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/Users/doks/repos/PRI/public/index.php')
+ERROR - 2024-02-01 12:27:32 --> Error connecting to the database: CodeIgniter\Database\Exceptions\DatabaseException: SQLite3 doesn't support persistent connections. in /Users/doks/repos/PRI/system/Database/SQLite3/Connection.php:80
+Stack trace:
+#0 /Users/doks/repos/PRI/system/Database/BaseConnection.php(392): CodeIgniter\Database\SQLite3\Connection->connect(true)
+#1 /Users/doks/repos/PRI/system/Database/SQLite3/Connection.php(59): CodeIgniter\Database\BaseConnection->initialize()
+#2 /Users/doks/repos/PRI/system/Database/BaseConnection.php(575): CodeIgniter\Database\SQLite3\Connection->initialize()
+#3 /Users/doks/repos/PRI/system/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 /Users/doks/repos/PRI/app/Models/Proizvod.php(28): CodeIgniter\Database\BaseBuilder->get()
+#5 /Users/doks/repos/PRI/app/Controllers/Jelovnik.php(33): App\Models\Proizvod->ucitaj()
+#6 /Users/doks/repos/PRI/system/CodeIgniter.php(941): App\Controllers\Jelovnik->index()
+#7 /Users/doks/repos/PRI/system/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Jelovnik))
+#8 /Users/doks/repos/PRI/system/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 /Users/doks/repos/PRI/public/index.php(79): CodeIgniter\CodeIgniter->run()
+#10 /Users/doks/repos/PRI/system/Commands/Server/rewrite.php(47): require_once('/Users/doks/rep...')
+#11 {main}
+CRITICAL - 2024-02-01 12:27:32 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [SQLite3]: SQLite3 doesn't support persistent connections.
+in SYSTEMPATH/Database/BaseConnection.php on line 428.
+ 1 SYSTEMPATH/Database/SQLite3/Connection.php(59): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH/Database/BaseConnection.php(575): CodeIgniter\Database\SQLite3\Connection->initialize()
+ 3 SYSTEMPATH/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `proizvod`', [], false)
+ 4 APPPATH/Models/Proizvod.php(28): CodeIgniter\Database\BaseBuilder->get()
+ 5 APPPATH/Controllers/Jelovnik.php(33): App\Models\Proizvod->ucitaj()
+ 6 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\Jelovnik->index()
+ 7 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Jelovnik))
+ 8 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/Users/doks/repos/PRI/public/index.php')
+CRITICAL - 2024-02-01 12:28:51 --> ErrorException: Undefined variable $db
+in APPPATH/Models/Proizvod.php on line 27.
+ 1 APPPATH/Models/Proizvod.php(27): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $db', '/Users/doks/repos/PRI/app/Models/Proizvod.php', 27)
+ 2 APPPATH/Controllers/Jelovnik.php(33): App\Models\Proizvod->ucitaj()
+ 3 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\Jelovnik->index()
+ 4 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Jelovnik))
+ 5 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/Users/doks/repos/PRI/public/index.php')
+CRITICAL - 2024-02-01 12:29:13 --> ErrorException: Undefined property: stdClass::$opis
+in APPPATH/Controllers/Jelovnik.php on line 38.
+ 1 APPPATH/Controllers/Jelovnik.php(38): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$opis', '/Users/doks/repos/PRI/app/Controllers/Jelovnik.php', 38)
+ 2 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\Jelovnik->index()
+ 3 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Jelovnik))
+ 4 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/Users/doks/repos/PRI/public/index.php')
+CRITICAL - 2024-02-01 12:30:12 --> ErrorException: Array to string conversion
+in APPPATH/Controllers/Jelovnik.php on line 34.
+ 1 APPPATH/Controllers/Jelovnik.php(34): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Array to string conversion', '/Users/doks/repos/PRI/app/Controllers/Jelovnik.php', 34)
+ 2 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\Jelovnik->index()
+ 3 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Jelovnik))
+ 4 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/Users/doks/repos/PRI/public/index.php')
+CRITICAL - 2024-02-01 12:32:50 --> Error: Object of class stdClass could not be converted to string
+in APPPATH/Controllers/Jelovnik.php on line 34.
+ 1 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\Jelovnik->index()
+ 2 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Jelovnik))
+ 3 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/Users/doks/repos/PRI/public/index.php')
+CRITICAL - 2024-02-01 12:33:48 --> Error: Object of class CodeIgniter\Database\SQLite3\Builder could not be converted to string
+in APPPATH/Models/Proizvod.php on line 29.
+ 1 APPPATH/Controllers/Jelovnik.php(33): App\Models\Proizvod->ucitaj()
+ 2 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\Jelovnik->index()
+ 3 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Jelovnik))
+ 4 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/Users/doks/repos/PRI/public/index.php')
+CRITICAL - 2024-02-01 12:34:05 --> Error: Object of class CodeIgniter\Database\SQLite3\Result could not be converted to string
+in APPPATH/Models/Proizvod.php on line 29.
+ 1 APPPATH/Controllers/Jelovnik.php(33): App\Models\Proizvod->ucitaj()
+ 2 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\Jelovnik->index()
+ 3 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Jelovnik))
+ 4 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/Users/doks/repos/PRI/public/index.php')
+CRITICAL - 2024-02-01 12:37:29 --> ErrorException: Undefined variable $slika
+in APPPATH/Views/jelovnik/jelovnik_item.php on line 2.
+ 1 APPPATH/Views/jelovnik/jelovnik_item.php(2): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $slika', '/Users/doks/repos/PRI/app/Views/jelovnik/jelovnik_item.php', 2)
+ 2 SYSTEMPATH/View/View.php(228): include('/Users/doks/repos/PRI/app/Views/jelovnik/jelovnik_item.php')
+ 3 SYSTEMPATH/View/View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1178): CodeIgniter\View\View->render('jelovnik/jelovnik_item', [], true)
+ 5 APPPATH/Controllers/Jelovnik.php(44): view('jelovnik/jelovnik_item', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\Jelovnik->index()
+ 7 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Jelovnik))
+ 8 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/Users/doks/repos/PRI/public/index.php')
+CRITICAL - 2024-02-01 12:39:31 --> ErrorException: Undefined variable $slika
+in APPPATH/Views/jelovnik/jelovnik_item.php on line 2.
+ 1 APPPATH/Views/jelovnik/jelovnik_item.php(2): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $slika', '/Users/doks/repos/PRI/app/Views/jelovnik/jelovnik_item.php', 2)
+ 2 SYSTEMPATH/View/View.php(228): include('/Users/doks/repos/PRI/app/Views/jelovnik/jelovnik_item.php')
+ 3 SYSTEMPATH/View/View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1178): CodeIgniter\View\View->render('jelovnik/jelovnik_item', [], true)
+ 5 APPPATH/Controllers/Jelovnik.php(44): view('jelovnik/jelovnik_item', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\Jelovnik->index()
+ 7 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Jelovnik))
+ 8 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/Users/doks/repos/PRI/public/index.php')
+CRITICAL - 2024-02-01 12:39:57 --> ErrorException: Undefined variable $opis
+in APPPATH/Views/jelovnik/jelovnik_item.php on line 5.
+ 1 APPPATH/Views/jelovnik/jelovnik_item.php(5): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $opis', '/Users/doks/repos/PRI/app/Views/jelovnik/jelovnik_item.php', 5)
+ 2 SYSTEMPATH/View/View.php(228): include('/Users/doks/repos/PRI/app/Views/jelovnik/jelovnik_item.php')
+ 3 SYSTEMPATH/View/View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1178): CodeIgniter\View\View->render('jelovnik/jelovnik_item', [], true)
+ 5 APPPATH/Controllers/Jelovnik.php(44): view('jelovnik/jelovnik_item', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\Jelovnik->index()
+ 7 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Jelovnik))
+ 8 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/Users/doks/repos/PRI/public/index.php')
+CRITICAL - 2024-02-01 12:45:58 --> TypeError: CodeIgniter\HTTP\SiteURI::stringifyRelativePath(): Return value must be of type string, null returned
+in SYSTEMPATH/HTTP/SiteURI.php on line 403.
+ 1 SYSTEMPATH/HTTP/SiteURI.php(377): CodeIgniter\HTTP\SiteURI->stringifyRelativePath(null)
+ 2 SYSTEMPATH/Helpers/url_helper.php(54): CodeIgniter\HTTP\SiteURI->baseUrl(null, null)
+ 3 APPPATH/Views/jelovnik/jelovnik_item.php(2): base_url(null)
+ 4 SYSTEMPATH/View/View.php(228): include('/Users/doks/repos/PRI/app/Views/jelovnik/jelovnik_item.php')
+ 5 SYSTEMPATH/View/View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 6 SYSTEMPATH/Common.php(1178): CodeIgniter\View\View->render('jelovnik/jelovnik_item', [], true)
+ 7 APPPATH/Controllers/Jelovnik.php(44): view('jelovnik/jelovnik_item', [...])
+ 8 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\Jelovnik->index()
+ 9 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Jelovnik))
+10 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/Users/doks/repos/PRI/public/index.php')
+CRITICAL - 2024-02-01 12:57:50 --> Error: Call to undefined method CodeIgniter\Database\SQLite3\Result::where()
+in APPPATH/Models/Proizvod.php on line 27.
+ 1 APPPATH/Controllers/Jelovnik.php(33): App\Models\Proizvod->ucitaj()
+ 2 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\Jelovnik->index()
+ 3 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Jelovnik))
+ 4 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/Users/doks/repos/PRI/public/index.php')
+CRITICAL - 2024-02-01 13:25:57 --> ErrorException: Undefined variable $builder
+in APPPATH/Models/Proizvod.php on line 30.
+ 1 APPPATH/Models/Proizvod.php(30): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $builder', '/Users/doks/repos/PRI/app/Models/Proizvod.php', 30)
+ 2 APPPATH/Controllers/Jelovnik.php(33): App\Models\Proizvod->ucitaj()
+ 3 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\Jelovnik->index()
+ 4 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Jelovnik))
+ 5 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/Users/doks/repos/PRI/public/index.php')
+CRITICAL - 2024-02-01 13:27:17 --> ErrorException: Undefined variable $builder
+in APPPATH/Models/Proizvod.php on line 30.
+ 1 APPPATH/Models/Proizvod.php(30): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $builder', '/Users/doks/repos/PRI/app/Models/Proizvod.php', 30)
+ 2 APPPATH/Controllers/Jelovnik.php(33): App\Models\Proizvod->ucitaj()
+ 3 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\Jelovnik->index()
+ 4 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Jelovnik))
+ 5 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/Users/doks/repos/PRI/public/index.php')
+CRITICAL - 2024-02-01 13:27:26 --> ErrorException: Undefined variable $builder
+in APPPATH/Models/Proizvod.php on line 31.
+ 1 APPPATH/Models/Proizvod.php(31): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $builder', '/Users/doks/repos/PRI/app/Models/Proizvod.php', 31)
+ 2 APPPATH/Controllers/Jelovnik.php(33): App\Models\Proizvod->ucitaj()
+ 3 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\Jelovnik->index()
+ 4 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Jelovnik))
+ 5 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/Users/doks/repos/PRI/public/index.php')
+CRITICAL - 2024-02-01 13:47:58 --> TypeError: CodeIgniter\Database\BaseBuilder::getWhere(): Argument #2 ($limit) must be of type ?int, array given, called in /Users/doks/repos/PRI/app/Models/Proizvod.php on line 34
+in SYSTEMPATH/Database/BaseBuilder.php on line 1737.
+ 1 APPPATH/Models/Proizvod.php(34): CodeIgniter\Database\BaseBuilder->getWhere('proizvod', [...])
+ 2 APPPATH/Controllers/Jelovnik.php(53): App\Models\Proizvod->ucitajPoID('1')
+ 3 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\Jelovnik->dodaj('1', 'mala')
+ 4 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Jelovnik))
+ 5 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/Users/doks/repos/PRI/public/index.php')
+CRITICAL - 2024-02-01 13:50:47 --> Error: Call to undefined method CodeIgniter\Database\SQLite3\Result::row()
+in APPPATH/Models/Proizvod.php on line 35.
+ 1 APPPATH/Controllers/Jelovnik.php(53): App\Models\Proizvod->ucitajPoID('1')
+ 2 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\Jelovnik->dodaj('1', 'mala')
+ 3 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Jelovnik))
+ 4 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/Users/doks/repos/PRI/public/index.php')
+CRITICAL - 2024-02-01 13:53:12 --> ErrorException: Undefined global variable $_SESSION
+in APPPATH/Controllers/Jelovnik.php on line 65.
+ 1 APPPATH/Controllers/Jelovnik.php(65): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined global variable $_SESSION', '/Users/doks/repos/PRI/app/Controllers/Jelovnik.php', 65)
+ 2 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\Jelovnik->dodaj('1', 'mala')
+ 3 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Jelovnik))
+ 4 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/Users/doks/repos/PRI/public/index.php')
+CRITICAL - 2024-02-01 13:55:21 --> ErrorException: Undefined global variable $_SESSION
+in APPPATH/Controllers/Jelovnik.php on line 65.
+ 1 APPPATH/Controllers/Jelovnik.php(65): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined global variable $_SESSION', '/Users/doks/repos/PRI/app/Controllers/Jelovnik.php', 65)
+ 2 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\Jelovnik->dodaj('2', 'srednja')
+ 3 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Jelovnik))
+ 4 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/Users/doks/repos/PRI/public/index.php')
+CRITICAL - 2024-02-01 13:55:27 --> Error: Cannot call constructor
+in APPPATH/Controllers/Register.php on line 8.
+ 1 SYSTEMPATH/CodeIgniter.php(913): App\Controllers\Register->__construct()
+ 2 SYSTEMPATH/CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/Users/doks/repos/PRI/public/index.php')
+CRITICAL - 2024-02-01 14:02:04 --> ErrorException: Could not check compatibility between App\Controllers\Login::initController(App\Controllers\RequestInterface $request, App\Controllers\ResponseInterface $response, App\Controllers\LoggerInterface $logger) and App\Controllers\BaseController::initController(CodeIgniter\HTTP\RequestInterface $request, CodeIgniter\HTTP\ResponseInterface $response, Psr\Log\LoggerInterface $logger), because class App\Controllers\RequestInterface is not available
+in APPPATH/Controllers/Login.php on line 6.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2024-02-01 14:02:58 --> ErrorException: Could not check compatibility between App\Controllers\Login::initController(App\Controllers\RequestInterface $request, App\Controllers\ResponseInterface $response, App\Controllers\LoggerInterface $logger) and App\Controllers\BaseController::initController(CodeIgniter\HTTP\RequestInterface $request, CodeIgniter\HTTP\ResponseInterface $response, Psr\Log\LoggerInterface $logger), because class App\Controllers\RequestInterface is not available
+in APPPATH/Controllers/Login.php on line 6.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2024-02-01 14:03:03 --> ErrorException: Could not check compatibility between App\Controllers\Login::initController(App\Controllers\RequestInterface $request, App\Controllers\ResponseInterface $response, App\Controllers\LoggerInterface $logger) and App\Controllers\BaseController::initController(CodeIgniter\HTTP\RequestInterface $request, CodeIgniter\HTTP\ResponseInterface $response, Psr\Log\LoggerInterface $logger), because class App\Controllers\RequestInterface is not available
+in APPPATH/Controllers/Login.php on line 6.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2024-02-01 14:03:06 --> ErrorException: Could not check compatibility between App\Controllers\Register::initController(App\Controllers\RequestInterface $request, App\Controllers\ResponseInterface $response, App\Controllers\LoggerInterface $logger) and App\Controllers\BaseController::initController(CodeIgniter\HTTP\RequestInterface $request, CodeIgniter\HTTP\ResponseInterface $response, Psr\Log\LoggerInterface $logger), because class App\Controllers\RequestInterface is not available
+in APPPATH/Controllers/Register.php on line 6.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2024-02-01 14:05:17 --> ErrorException: Undefined property: App\Controllers\Register::$load
+in APPPATH/Controllers/Register.php on line 37.
+ 1 APPPATH/Controllers/Register.php(37): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\Register::$load', '/Users/doks/repos/PRI/app/Controllers/Register.php', 37)
+ 2 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\Register->index()
+ 3 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Register))
+ 4 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/Users/doks/repos/PRI/public/index.php')
+CRITICAL - 2024-02-01 14:05:28 --> ErrorException: Undefined property: App\Controllers\Login::$load
+in APPPATH/Controllers/Login.php on line 37.
+ 1 APPPATH/Controllers/Login.php(37): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\Login::$load', '/Users/doks/repos/PRI/app/Controllers/Login.php', 37)
+ 2 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\Login->index()
+ 3 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 4 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/Users/doks/repos/PRI/public/index.php')
+CRITICAL - 2024-02-01 14:10:01 --> ErrorException: Undefined property: App\Controllers\Login::$form_validation
+in APPPATH/Controllers/Login.php on line 36.
+ 1 APPPATH/Controllers/Login.php(36): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\Login::$form_validation', '/Users/doks/repos/PRI/app/Controllers/Login.php', 36)
+ 2 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\Login->index()
+ 3 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 4 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/Users/doks/repos/PRI/public/index.php')
+CRITICAL - 2024-02-01 14:13:39 --> ErrorException: Undefined property: App\Controllers\Login::$form_validation
+in APPPATH/Controllers/Login.php on line 39.
+ 1 APPPATH/Controllers/Login.php(39): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\Login::$form_validation', '/Users/doks/repos/PRI/app/Controllers/Login.php', 39)
+ 2 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\Login->index()
+ 3 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 4 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/Users/doks/repos/PRI/public/index.php')
+CRITICAL - 2024-02-01 14:15:13 --> ErrorException: Undefined variable $validation
+in APPPATH/Controllers/Login.php on line 36.
+ 1 APPPATH/Controllers/Login.php(36): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $validation', '/Users/doks/repos/PRI/app/Controllers/Login.php', 36)
+ 2 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\Login->index()
+ 3 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 4 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/Users/doks/repos/PRI/public/index.php')
+CRITICAL - 2024-02-01 14:17:30 --> Error: Call to undefined method CodeIgniter\Validation\Validation::set_error_delimiters()
+in APPPATH/Controllers/Login.php on line 37.
+ 1 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\Login->index()
+ 2 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 3 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/Users/doks/repos/PRI/public/index.php')
+CRITICAL - 2024-02-01 14:18:25 --> Error: Call to undefined method CodeIgniter\Validation\Validation::set_rules()
+in APPPATH/Controllers/Register.php on line 40.
+ 1 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\Register->index()
+ 2 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Register))
+ 3 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/Users/doks/repos/PRI/public/index.php')
+CRITICAL - 2024-02-01 14:18:52 --> TypeError: CodeIgniter\Validation\Validation::setRules(): Argument #1 ($rules) must be of type array, string given, called in /Users/doks/repos/PRI/app/Controllers/Register.php on line 40
+in SYSTEMPATH/Validation/Validation.php on line 576.
+ 1 APPPATH/Controllers/Register.php(40): CodeIgniter\Validation\Validation->setRules('ime', 'Ime', 'trim|required|max_length[20]', [...])
+ 2 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\Register->index()
+ 3 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Register))
+ 4 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/Users/doks/repos/PRI/public/index.php')

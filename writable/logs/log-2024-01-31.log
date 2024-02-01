@@ -1,0 +1,271 @@
+CRITICAL - 2024-01-31 14:50:51 --> Error: Class "CI_Controller" not found
+in APPPATH/Controllers/Home.php on line 3.
+ 1 SYSTEMPATH/Autoloader/Autoloader.php(309): include_once()
+ 2 SYSTEMPATH/Autoloader/Autoloader.php(288): CodeIgniter\Autoloader\Autoloader->includeFile('/Users/doks/repos/PRI/app/Controllers/Home.php')
+ 3 SYSTEMPATH/Autoloader/Autoloader.php(266): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Home')
+ 4 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Home')
+ 5 SYSTEMPATH/CodeIgniter.php(899): class_exists('\\App\\Controllers\\Home', true)
+ 6 SYSTEMPATH/CodeIgniter.php(489): CodeIgniter\CodeIgniter->startController()
+ 7 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/Users/doks/repos/PRI/public/index.php')
+CRITICAL - 2024-01-31 14:50:55 --> Error: Class "CI_Controller" not found
+in APPPATH/Controllers/Home.php on line 3.
+ 1 SYSTEMPATH/Autoloader/Autoloader.php(309): include_once()
+ 2 SYSTEMPATH/Autoloader/Autoloader.php(288): CodeIgniter\Autoloader\Autoloader->includeFile('/Users/doks/repos/PRI/app/Controllers/Home.php')
+ 3 SYSTEMPATH/Autoloader/Autoloader.php(266): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Home')
+ 4 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Home')
+ 5 SYSTEMPATH/CodeIgniter.php(899): class_exists('\\App\\Controllers\\Home', true)
+ 6 SYSTEMPATH/CodeIgniter.php(489): CodeIgniter\CodeIgniter->startController()
+ 7 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/Users/doks/repos/PRI/public/index.php')
+CRITICAL - 2024-01-31 14:54:09 --> Error: Class "App\Controllers\Controller" not found
+in APPPATH/Controllers/Home.php on line 5.
+ 1 SYSTEMPATH/Autoloader/Autoloader.php(309): include_once()
+ 2 SYSTEMPATH/Autoloader/Autoloader.php(288): CodeIgniter\Autoloader\Autoloader->includeFile('/Users/doks/repos/PRI/app/Controllers/Home.php')
+ 3 SYSTEMPATH/Autoloader/Autoloader.php(266): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Home')
+ 4 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Home')
+ 5 SYSTEMPATH/CodeIgniter.php(899): class_exists('\\App\\Controllers\\Home', true)
+ 6 SYSTEMPATH/CodeIgniter.php(489): CodeIgniter\CodeIgniter->startController()
+ 7 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/Users/doks/repos/PRI/public/index.php')
+CRITICAL - 2024-01-31 14:54:11 --> Error: Class "App\Controllers\Controller" not found
+in APPPATH/Controllers/Home.php on line 5.
+ 1 SYSTEMPATH/Autoloader/Autoloader.php(309): include_once()
+ 2 SYSTEMPATH/Autoloader/Autoloader.php(288): CodeIgniter\Autoloader\Autoloader->includeFile('/Users/doks/repos/PRI/app/Controllers/Home.php')
+ 3 SYSTEMPATH/Autoloader/Autoloader.php(266): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Home')
+ 4 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Home')
+ 5 SYSTEMPATH/CodeIgniter.php(899): class_exists('\\App\\Controllers\\Home', true)
+ 6 SYSTEMPATH/CodeIgniter.php(489): CodeIgniter\CodeIgniter->startController()
+ 7 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/Users/doks/repos/PRI/public/index.php')
+CRITICAL - 2024-01-31 14:54:24 --> Error: Class "App\Controllers\Controller" not found
+in APPPATH/Controllers/Home.php on line 5.
+ 1 SYSTEMPATH/Autoloader/Autoloader.php(309): include_once()
+ 2 SYSTEMPATH/Autoloader/Autoloader.php(288): CodeIgniter\Autoloader\Autoloader->includeFile('/Users/doks/repos/PRI/app/Controllers/Home.php')
+ 3 SYSTEMPATH/Autoloader/Autoloader.php(266): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Home')
+ 4 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Home')
+ 5 SYSTEMPATH/CodeIgniter.php(899): class_exists('\\App\\Controllers\\Home', true)
+ 6 SYSTEMPATH/CodeIgniter.php(489): CodeIgniter\CodeIgniter->startController()
+ 7 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/Users/doks/repos/PRI/public/index.php')
+CRITICAL - 2024-01-31 14:54:40 --> Error: Class "App\Controllers\Controller" not found
+in APPPATH/Controllers/Home.php on line 5.
+ 1 SYSTEMPATH/Autoloader/Autoloader.php(309): include_once()
+ 2 SYSTEMPATH/Autoloader/Autoloader.php(288): CodeIgniter\Autoloader\Autoloader->includeFile('/Users/doks/repos/PRI/app/Controllers/Home.php')
+ 3 SYSTEMPATH/Autoloader/Autoloader.php(266): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Home')
+ 4 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Home')
+ 5 SYSTEMPATH/CodeIgniter.php(899): class_exists('\\App\\Controllers\\Home', true)
+ 6 SYSTEMPATH/CodeIgniter.php(489): CodeIgniter\CodeIgniter->startController()
+ 7 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/Users/doks/repos/PRI/public/index.php')
+CRITICAL - 2024-01-31 14:56:57 --> Error: Class "App\Controllers\Controller" not found
+in APPPATH/Controllers/Home.php on line 5.
+ 1 SYSTEMPATH/Autoloader/Autoloader.php(309): include_once()
+ 2 SYSTEMPATH/Autoloader/Autoloader.php(288): CodeIgniter\Autoloader\Autoloader->includeFile('/Users/doks/repos/PRI/app/Controllers/Home.php')
+ 3 SYSTEMPATH/Autoloader/Autoloader.php(266): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Home')
+ 4 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Home')
+ 5 SYSTEMPATH/CodeIgniter.php(899): class_exists('\\App\\Controllers\\Home', true)
+ 6 SYSTEMPATH/CodeIgniter.php(489): CodeIgniter\CodeIgniter->startController()
+ 7 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/Users/doks/repos/PRI/public/index.php')
+CRITICAL - 2024-01-31 14:57:02 --> Error: Class "App\Controllers\Controller" not found
+in APPPATH/Controllers/Home.php on line 5.
+ 1 SYSTEMPATH/Autoloader/Autoloader.php(309): include_once()
+ 2 SYSTEMPATH/Autoloader/Autoloader.php(288): CodeIgniter\Autoloader\Autoloader->includeFile('/Users/doks/repos/PRI/app/Controllers/Home.php')
+ 3 SYSTEMPATH/Autoloader/Autoloader.php(266): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Home')
+ 4 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Home')
+ 5 SYSTEMPATH/CodeIgniter.php(899): class_exists('\\App\\Controllers\\Home', true)
+ 6 SYSTEMPATH/CodeIgniter.php(489): CodeIgniter\CodeIgniter->startController()
+ 7 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/Users/doks/repos/PRI/public/index.php')
+CRITICAL - 2024-01-31 14:57:13 --> Error: Class "App\Controllers\Controller" not found
+in APPPATH/Controllers/Home.php on line 5.
+ 1 SYSTEMPATH/Autoloader/Autoloader.php(309): include_once()
+ 2 SYSTEMPATH/Autoloader/Autoloader.php(288): CodeIgniter\Autoloader\Autoloader->includeFile('/Users/doks/repos/PRI/app/Controllers/Home.php')
+ 3 SYSTEMPATH/Autoloader/Autoloader.php(266): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Home')
+ 4 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Home')
+ 5 SYSTEMPATH/CodeIgniter.php(899): class_exists('\\App\\Controllers\\Home', true)
+ 6 SYSTEMPATH/CodeIgniter.php(489): CodeIgniter\CodeIgniter->startController()
+ 7 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-31 14:57:17 --> Error: Class "App\Controllers\Controller" not found
+in APPPATH/Controllers/Home.php on line 5.
+ 1 SYSTEMPATH/Autoloader/Autoloader.php(309): include_once()
+ 2 SYSTEMPATH/Autoloader/Autoloader.php(288): CodeIgniter\Autoloader\Autoloader->includeFile('/Users/doks/repos/PRI/app/Controllers/Home.php')
+ 3 SYSTEMPATH/Autoloader/Autoloader.php(266): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Home')
+ 4 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Home')
+ 5 SYSTEMPATH/CodeIgniter.php(899): class_exists('\\App\\Controllers\\Home', true)
+ 6 SYSTEMPATH/CodeIgniter.php(489): CodeIgniter\CodeIgniter->startController()
+ 7 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/Users/doks/repos/PRI/public/index.php')
+CRITICAL - 2024-01-31 15:06:18 --> Error: Cannot call constructor
+in APPPATH/Controllers/Jelovnik.php on line 8.
+ 1 SYSTEMPATH/CodeIgniter.php(913): App\Controllers\Jelovnik->__construct()
+ 2 SYSTEMPATH/CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/Users/doks/repos/PRI/public/index.php')
+CRITICAL - 2024-01-31 15:28:56 --> Error: Cannot call constructor
+in APPPATH/Controllers/Jelovnik.php on line 8.
+ 1 SYSTEMPATH/CodeIgniter.php(913): App\Controllers\Jelovnik->__construct()
+ 2 SYSTEMPATH/CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/Users/doks/repos/PRI/public/index.php')
+CRITICAL - 2024-01-31 15:29:24 --> Error: Cannot call constructor
+in APPPATH/Controllers/Login.php on line 8.
+ 1 SYSTEMPATH/CodeIgniter.php(913): App\Controllers\Login->__construct()
+ 2 SYSTEMPATH/CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/Users/doks/repos/PRI/public/index.php')
+CRITICAL - 2024-01-31 15:29:30 --> Error: Cannot call constructor
+in APPPATH/Controllers/Jelovnik.php on line 8.
+ 1 SYSTEMPATH/CodeIgniter.php(913): App\Controllers\Jelovnik->__construct()
+ 2 SYSTEMPATH/CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/Users/doks/repos/PRI/public/index.php')
+CRITICAL - 2024-01-31 15:29:35 --> Error: Cannot call constructor
+in APPPATH/Controllers/Jelovnik.php on line 8.
+ 1 SYSTEMPATH/CodeIgniter.php(913): App\Controllers\Jelovnik->__construct()
+ 2 SYSTEMPATH/CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/Users/doks/repos/PRI/public/index.php')
+CRITICAL - 2024-01-31 15:30:27 --> Error: Cannot call constructor
+in APPPATH/Controllers/Jelovnik.php on line 8.
+ 1 SYSTEMPATH/CodeIgniter.php(913): App\Controllers\Jelovnik->__construct()
+ 2 SYSTEMPATH/CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/Users/doks/repos/PRI/public/index.php')
+CRITICAL - 2024-01-31 15:32:23 --> Error: Cannot call constructor
+in APPPATH/Controllers/Login.php on line 8.
+ 1 SYSTEMPATH/CodeIgniter.php(913): App\Controllers\Login->__construct()
+ 2 SYSTEMPATH/CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/Users/doks/repos/PRI/public/index.php')
+CRITICAL - 2024-01-31 15:33:02 --> Error: Cannot call constructor
+in APPPATH/Controllers/Admin.php on line 8.
+ 1 SYSTEMPATH/CodeIgniter.php(913): App\Controllers\Admin->__construct()
+ 2 SYSTEMPATH/CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/Users/doks/repos/PRI/public/index.php')
+CRITICAL - 2024-01-31 15:33:06 --> Error: Cannot call constructor
+in APPPATH/Controllers/Register.php on line 8.
+ 1 SYSTEMPATH/CodeIgniter.php(913): App\Controllers\Register->__construct()
+ 2 SYSTEMPATH/CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/Users/doks/repos/PRI/public/index.php')
+CRITICAL - 2024-01-31 15:33:13 --> Error: Cannot call constructor
+in APPPATH/Controllers/Login.php on line 8.
+ 1 SYSTEMPATH/CodeIgniter.php(913): App\Controllers\Login->__construct()
+ 2 SYSTEMPATH/CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/Users/doks/repos/PRI/public/index.php')
+CRITICAL - 2024-01-31 15:34:51 --> Error: Cannot call constructor
+in APPPATH/Controllers/Jelovnik.php on line 8.
+ 1 SYSTEMPATH/CodeIgniter.php(913): App\Controllers\Jelovnik->__construct()
+ 2 SYSTEMPATH/CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/Users/doks/repos/PRI/public/index.php')
+CRITICAL - 2024-01-31 15:36:38 --> Error: Cannot call constructor
+in APPPATH/Controllers/Jelovnik.php on line 8.
+ 1 SYSTEMPATH/CodeIgniter.php(913): App\Controllers\Jelovnik->__construct()
+ 2 SYSTEMPATH/CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/Users/doks/repos/PRI/public/index.php')
+CRITICAL - 2024-01-31 15:37:38 --> Error: Cannot call constructor
+in APPPATH/Controllers/Jelovnik.php on line 8.
+ 1 SYSTEMPATH/CodeIgniter.php(913): App\Controllers\Jelovnik->__construct()
+ 2 SYSTEMPATH/CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/Users/doks/repos/PRI/public/index.php')
+CRITICAL - 2024-01-31 15:37:42 --> Error: Cannot call constructor
+in APPPATH/Controllers/Jelovnik.php on line 8.
+ 1 SYSTEMPATH/CodeIgniter.php(913): App\Controllers\Jelovnik->__construct()
+ 2 SYSTEMPATH/CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/Users/doks/repos/PRI/public/index.php')
+CRITICAL - 2024-01-31 15:38:21 --> Error: Cannot call constructor
+in APPPATH/Controllers/Jelovnik.php on line 8.
+ 1 SYSTEMPATH/CodeIgniter.php(913): App\Controllers\Jelovnik->__construct()
+ 2 SYSTEMPATH/CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/Users/doks/repos/PRI/public/index.php')
+CRITICAL - 2024-01-31 15:38:28 --> Error: Cannot call constructor
+in APPPATH/Controllers/Jelovnik.php on line 8.
+ 1 SYSTEMPATH/CodeIgniter.php(913): App\Controllers\Jelovnik->__construct()
+ 2 SYSTEMPATH/CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/Users/doks/repos/PRI/public/index.php')
+CRITICAL - 2024-01-31 15:38:56 --> Error: Cannot call constructor
+in APPPATH/Controllers/Jelovnik.php on line 8.
+ 1 SYSTEMPATH/CodeIgniter.php(913): App\Controllers\Jelovnik->__construct()
+ 2 SYSTEMPATH/CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/Users/doks/repos/PRI/public/index.php')
+CRITICAL - 2024-01-31 15:41:46 --> Error: Cannot call constructor
+in APPPATH/Controllers/Jelovnik.php on line 8.
+ 1 SYSTEMPATH/CodeIgniter.php(913): App\Controllers\Jelovnik->__construct()
+ 2 SYSTEMPATH/CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/Users/doks/repos/PRI/public/index.php')
+CRITICAL - 2024-01-31 15:41:54 --> Error: Cannot call constructor
+in APPPATH/Controllers/Jelovnik.php on line 8.
+ 1 SYSTEMPATH/CodeIgniter.php(913): App\Controllers\Jelovnik->__construct()
+ 2 SYSTEMPATH/CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/Users/doks/repos/PRI/public/index.php')
+CRITICAL - 2024-01-31 15:46:28 --> ErrorException: Could not check compatibility between App\Controllers\Jelovnik::initController(App\Controllers\RequestInterface $request, App\Controllers\ResponseInterface $response, App\Controllers\LoggerInterface $logger) and App\Controllers\BaseController::initController(CodeIgniter\HTTP\RequestInterface $request, CodeIgniter\HTTP\ResponseInterface $response, Psr\Log\LoggerInterface $logger), because class App\Controllers\RequestInterface is not available
+in APPPATH/Controllers/Jelovnik.php on line 6.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2024-01-31 15:46:35 --> ErrorException: Could not check compatibility between App\Controllers\Jelovnik::initController(App\Controllers\RequestInterface $request, App\Controllers\ResponseInterface $response, App\Controllers\LoggerInterface $logger) and App\Controllers\BaseController::initController(CodeIgniter\HTTP\RequestInterface $request, CodeIgniter\HTTP\ResponseInterface $response, Psr\Log\LoggerInterface $logger), because class App\Controllers\RequestInterface is not available
+in APPPATH/Controllers/Jelovnik.php on line 6.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2024-01-31 15:47:29 --> ErrorException: Could not check compatibility between App\Controllers\Jelovnik::initController(App\Controllers\RequestInterface $request, App\Controllers\ResponseInterface $response, App\Controllers\LoggerInterface $logger) and App\Controllers\BaseController::initController(CodeIgniter\HTTP\RequestInterface $request, CodeIgniter\HTTP\ResponseInterface $response, Psr\Log\LoggerInterface $logger), because class App\Controllers\RequestInterface is not available
+in APPPATH/Controllers/Jelovnik.php on line 6.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2024-01-31 15:48:56 --> ErrorException: Declaration of App\Controllers\Jelovnik::initController() must be compatible with App\Controllers\BaseController::initController(CodeIgniter\HTTP\RequestInterface $request, CodeIgniter\HTTP\ResponseInterface $response, Psr\Log\LoggerInterface $logger)
+in APPPATH/Controllers/Jelovnik.php on line 6.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2024-01-31 15:49:39 --> ErrorException: Could not check compatibility between App\Controllers\Jelovnik::initController(App\Controllers\RequestInterface $request, App\Controllers\ResponseInterface $response, App\Controllers\LoggerInterface $logger) and App\Controllers\BaseController::initController(CodeIgniter\HTTP\RequestInterface $request, CodeIgniter\HTTP\ResponseInterface $response, Psr\Log\LoggerInterface $logger), because class App\Controllers\RequestInterface is not available
+in APPPATH/Controllers/Jelovnik.php on line 6.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2024-01-31 15:50:21 --> ErrorException: Could not check compatibility between App\Controllers\Jelovnik::initController(App\Controllers\RequestInterface $request, App\Controllers\ResponseInterface $response, App\Controllers\LoggerInterface $logger) and App\Controllers\BaseController::initController(CodeIgniter\HTTP\RequestInterface $request, CodeIgniter\HTTP\ResponseInterface $response, Psr\Log\LoggerInterface $logger), because class App\Controllers\RequestInterface is not available
+in APPPATH/Controllers/Jelovnik.php on line 6.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2024-01-31 15:51:51 --> ErrorException: Could not check compatibility between App\Controllers\Jelovnik::initController(App\Controllers\RequestInterface $request, App\Controllers\ResponseInterface $response, App\Controllers\LoggerInterface $logger) and App\Controllers\BaseController::initController(CodeIgniter\HTTP\RequestInterface $request, CodeIgniter\HTTP\ResponseInterface $response, Psr\Log\LoggerInterface $logger), because class App\Controllers\RequestInterface is not available
+in APPPATH/Controllers/Jelovnik.php on line 7.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2024-01-31 15:54:14 --> Error: Call to undefined method CodeIgniter\Database\SQLite3\Connection::where()
+in APPPATH/Models/Proizvod.php on line 26.
+ 1 APPPATH/Controllers/Jelovnik.php(33): App\Models\Proizvod->ucitaj()
+ 2 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\Jelovnik->index()
+ 3 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Jelovnik))
+ 4 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/Users/doks/repos/PRI/public/index.php')
